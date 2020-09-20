@@ -1,8 +1,7 @@
 # Numériser le patrimoine I: standards et bonnes pratiques
 
-Simon Gabay
-
-Genève, semestre d'automne
+* Simon Gabay
+* Genève, semestre d'automne
 
 ---
 * CS: 32M7127
