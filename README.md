@@ -1,15 +1,16 @@
 # Numériser le patrimoine I: standards et bonnes pratiques
 
 Simon Gabay
+
 Genève, semestre d'automne
 
 ---
-CS: 32M7127
-Salle: Uni Bastions  307
-Horaire: mardi 10-12
-GitHub: https://github.com/gabays/NumPat_1
-Moodle: https://moodle.unige.ch/course/view.php?id=8260
-Catalogue des cours: https://wwwi.unige.ch/cursus/programme-des-cours/web/teachings/details/2020-32M7127
+* CS: 32M7127
+* Salle: Uni Bastions  307
+* Horaire: mardi 10-12
+* GitHub: https://github.com/gabays/NumPat_1
+* Moodle: https://moodle.unige.ch/course/view.php?id=8260
+* Catalogue des cours: https://wwwi.unige.ch/cursus/programme-des-cours/web/teachings/details/2020-32M7127
 
 ---
 ## Programme
