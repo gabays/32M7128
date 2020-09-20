@@ -20,7 +20,7 @@ Genève, semestre d'automne
 ---
 ### Cite this repository
 
-Simon Gabay (éd.), _Numériser le patrimoine I: standards et bonnes pratiques_, Genève: Université de Genève, 2020, [https://github.com/gabays/https://github.com/gabays/NumPat_1](https://github.com/gabays/https://github.com/gabays/NumPat_1).
+Simon Gabay, _Numériser le patrimoine I: standards et bonnes pratiques_, Genève: Université de Genève, 2020, [https://github.com/gabays/https://github.com/gabays/NumPat_1](https://github.com/gabays/https://github.com/gabays/NumPat_1).
 
 ---
 ## Droits
