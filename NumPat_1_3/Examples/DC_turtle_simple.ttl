@@ -1,0 +1,39 @@
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.unine.ch/exemple_1>
+  dc11:title "La première nuit roman" ;
+  dc11:creator "Marc Lévy" ;
+  dc11:subject "Romance", "Légende" ;
+  dc11:description "L'amour est l'ultime aventure, mais l'aventure n'est pas sans danger..." ;
+  dc11:publisher "Paris : R. Laffont" ;
+  dc11:date "2009" ;
+  dc11:type "Text" ;
+  dc11:format "485 p. : ill. " ;
+  dc11:identifier " Rero:R005209793 ", " ISBN:9782221113110" ;
+  dc11:language "French" ;
+  dc11:coverage "Oural", "Ethiopie" .
+
+<http://www.unine.ch/exemple_2>
+  dc11:title "La Joconde", "La Gioconda" ;
+  dc11:creator "Leonard de Vinci" ;
+  dc11:subject "Lisa Gherardini" ;
+  dc11:description "La Joconde est le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux. " ;
+  dc11:date "1503-1506" ;
+  dc11:type "Painting" ;
+  dc11:format "Physical object", "77 × 53 cm" ;
+  dc11:identifier "INV. 779" .
+
+<http://www.unine.ch/exemple_3>
+  dc11:title "Fribourg/Freiburg, Archives de l'État de Fribourg/Staatsarchiv Freiburg, Archives du Chapitre St. Nicolas/Kapitelsarchiv St. Niklaus, CSN III.3.5 : Antiphonarium Lausannense. De Sanctis, pars hiemalis. Officium B.M.V. Commune Sanctorum" ;
+  dc11:description "This antiphonary with musical notation, whose text corresponds to the Lausanne Ordinary, contains the winter portion of the de Sanctis, the Officium B.M.V. and the Commune Sanctorum. The parchment codex was written between 1510 and 1517 in the workshop of Master Ruprecht (Fabri) in Fribourg by 2 hands (A and B). The book decorations are by Jakob Frank of the Augustinian monastery of Fribourg and an assistant." ;
+  dc11:publisher "e-codices - Virtual Manuscript Library of Switzerland" ;
+  dc11:date "1510-1517 :: notBefore 1510 :: notAfter 1517" ;
+  dc11:type "Manuscript" ;
+  dc11:format "Parchment, 162 ff., 56.5 x 39.5 cm" ;
+  dc11:identifier "doi:10.5076/e-codices-aef-CSN-III-3-5", "https://www.e-codices.ch/en/list/one/aef/CSN-III-3-5", "Fribourg/Freiburg, Archives de l'État de Fribourg/Staatsarchiv Freiburg, Archives du Chapitre St. Nicolas/Kapitelsarchiv St. Niklaus, CSN III.3.5" ;
+  dc11:source "https://www.e-codices.ch/en/list/one/aef/CSN-III-3-5" ;
+  dc11:language "lat" ;
+  dc11:relation "Leisibach Joseph, Die liturgischen Handschriften des Kantons Freiburg (ohne Kantonsbibliothek), Freiburg 1977 (iter Helveticum, Subsidia 16), S. 42-44." ;
+  dc11:coverage "Fribourg, Switzerland" ;
+  dc11:rights "e-codices / Fribourg/Freiburg, Archives de l'État de Fribourg/Staatsarchiv Freiburg (cf. https://www.e-codices.ch/en/about/terms)" ;
+  dc11:preview_page "https://www.e-codices.unifr.ch:443/loris/aef/aef-CSN-III-3-5/aef-CSN-III-3-5_001.jp2/full/,150/0/default.jpg" .
