@@ -1,6 +1,6 @@
 Numériser le patrimoine I: standards et bonnes pratiques
 
-# Entités nommées et référentiels
+# Identifiants, entités et référentiels
 
 Simon Gabay
 Genève
