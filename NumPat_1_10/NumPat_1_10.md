@@ -17,7 +17,7 @@ StoryMapJS: https://storymap.knightlab.com
 TimeLineJS: https://timeline.knightlab.com
 
 ---
-## Maps
+## Maps
 
 <img src="images/maps_1.png" width="500px" style="float:right;"/>
 <img src="images/maps_2.png" width="500px" style="float:right;"/>
