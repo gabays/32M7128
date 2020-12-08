@@ -16,6 +16,7 @@ Simon Gabay
 StoryMapJS: https://storymap.knightlab.com
 
 <img src="images/StoryMap_1.png" width="500px" style="float:right;"/>
+
 * Vous pouvez ajouter des slides à gauche (flèche route)
 * Le lieu est ajouté dans la barre bleue (tapez le nom de la ville ou bien ajoutez directement les coordonnées)
 * Si vous avez déjà enregistré votre StoryMap, pensez à publier d'éventuels changements (flèches vertes)
@@ -23,7 +24,7 @@ StoryMapJS: https://storymap.knightlab.com
 
 <img src="images/StoryMap_2.png" width="500px" style="float:right;"/>
 
-*Si vous voulez publier votre carte sur omeka, récupérez l'`<iframe/>` et ajoutez le dans votre page directement dans le code (flèche rouge).
+* Si vous voulez publier votre carte sur omeka, récupérez l'`<iframe/>` et ajoutez le dans votre page directement dans le code (flèche rouge).
 
 <img src="images/omeka_1.png" width="500px" style="float:right;"/>
 <img src="images/omeka_2.png" width="500px" style="float:right;"/>
@@ -32,7 +33,8 @@ StoryMapJS: https://storymap.knightlab.com
 ## TimeLineJS
 
 Le principe est sensiblement le même que précédemment, sauf qu'il vous faut en plus passer par Google docs.
-TimeLineJS: https://timeline.knightlab.com
+
+vous pouvez utiliser le service en ligne _TimeLineJS_: https://timeline.knightlab.com
 
 ---
 ## Maps
