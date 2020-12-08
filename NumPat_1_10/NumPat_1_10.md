@@ -10,10 +10,28 @@ Simon Gabay
 
 <img src="images/tuning.jpg" width="300px" style="float:right;"/>
 
-## Quelques outils simples
+---
+## StoryMapJS
 
 StoryMapJS: https://storymap.knightlab.com
 
+<img src="images/StoryMap_1.png" width="500px" style="float:right;"/>
+* Vous pouvez ajouter des slides à gauche (flèche route)
+* Le lieu est ajouté dans la barre bleue (tapez le nom de la ville ou bien ajoutez directement les coordonnées)
+* Si vous avez déjà enregistré votre StoryMap, pensez à publier d'éventuels changements (flèches vertes)
+* Pour partager votre document, choisissez _Share_ (flèche violette)
+
+<img src="images/StoryMap_2.png" width="500px" style="float:right;"/>
+
+*Si vous voulez publier votre carte sur omeka, récupérez l'`<iframe/>` et ajoutez le dans votre page directement dans le code (flèche rouge).
+
+<img src="images/omeka_1.png" width="500px" style="float:right;"/>
+<img src="images/omeka_2.png" width="500px" style="float:right;"/>
+
+---
+## TimeLineJS
+
+Le principe est sensiblement le même que précédemment, sauf qu'il vous faut en plus passer par Google docs.
 TimeLineJS: https://timeline.knightlab.com
 
 ---
@@ -27,6 +45,8 @@ TimeLineJS: https://timeline.knightlab.com
 ---
 
 ## Mock up
+
+Rappelez-vous le [cours 5](https://github.com/gabays/NumPat_1/blob/master/NumPat_1_5/NumPat_1_5.md), nous avions vu  qu'il était préférable de faire un _mock up_, c'est-à-dire un dessin préparatoire du site, avant de se lancer dans le développement. Il existe des logiciels pour cela.
 
 Il existe un logiciel gratuit:  Pencil (https://pencil.evolus.vn)
 
