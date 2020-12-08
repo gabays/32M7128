@@ -19,7 +19,7 @@ StoryMapJS: https://storymap.knightlab.com
 
 * Vous pouvez ajouter des slides à gauche (flèche route)
 * Le lieu est ajouté dans la barre bleue (tapez le nom de la ville ou bien ajoutez directement les coordonnées)
-* Si vous avez déjà enregistré votre StoryMap, pensez à publier d'éventuels changements (flèches vertes)
+* Si vous avez déjà enregistré votre StoryMap, pensez à publier d'éventuels changements (flèche verte)
 * Pour partager votre document, choisissez _Share_ (flèche violette)
 
 <img src="images/StoryMap_2.png" width="500px" style="float:right;"/>
