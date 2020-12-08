@@ -23,3 +23,12 @@ TimeLineJS: https://timeline.knightlab.com
 Il existe un logiciel gratuit:  Pencil (https://pencil.evolus.vn)
 
 Il existe aussi des logiciels en ligne (plus ou moins) gratuits (https://www.lucidchart.com/pages/fr/exemple/mockup-en-ligne)
+
+<img src="images/pencil_1.png" width="500px" style="float:right;"/>
+
+<img src="images/pencil_2.png" width="500px" style="float:right;"/>
+
+* La partie en vert permet de sélectionner le type de dessin que nous allons faire
+(il est ainsi possible de faire un _flowchart_, ou de dessiner des applications Windows…)
+* La partie en bleu permet de dessiner les différentes pages qui vont constituer notre site.
+* La partie en rouge permet de redessiner les objets génériques sélectionnés à gauche
