@@ -29,6 +29,6 @@ Il existe aussi des logiciels en ligne (plus ou moins) gratuits (https://www.luc
 <img src="images/pencil_2.png" width="500px" style="float:right;"/>
 
 * La partie en vert permet de sélectionner le type de dessin que nous allons faire
-(il est ainsi possible de faire un _flowchart_, ou de dessiner des applications Windows…)
+(il est ainsi possible de faire un _flowchart_, ou de dessiner des applications Windows…).
 * La partie en bleu permet de dessiner les différentes pages qui vont constituer notre site.
-* La partie en rouge permet de redessiner les objets génériques sélectionnés à gauche
+* La partie en rouge permet de redessiner les objets génériques sélectionnés à gauche.
