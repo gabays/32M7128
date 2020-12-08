@@ -34,7 +34,7 @@ StoryMapJS: https://storymap.knightlab.com
 
 Le principe est sensiblement le même que précédemment, sauf qu'il vous faut en plus passer par Google docs.
 
-vous pouvez utiliser le service en ligne _TimeLineJS_: https://timeline.knightlab.com
+Vous pouvez utiliser le service en ligne _TimeLineJS_: https://timeline.knightlab.com
 
 ---
 ## Maps
