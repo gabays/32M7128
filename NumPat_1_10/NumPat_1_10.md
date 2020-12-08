@@ -10,9 +10,16 @@ Simon Gabay
 
 <img src="images/tuning.jpg" width="300px" style="float:right;"/>
 
+## Quelques outils simples
+
 StoryMapJS: https://storymap.knightlab.com
 
 TimeLineJS: https://timeline.knightlab.com
 
-Pencil: https://pencil.evolus.vn/
+---
 
+## Mock up
+
+Il existe un logiciel gratuit:  Pencil (https://pencil.evolus.vn)
+
+Il existe aussi des logiciels en ligne (plus ou moins) gratuits (https://www.lucidchart.com/pages/fr/exemple/mockup-en-ligne)
