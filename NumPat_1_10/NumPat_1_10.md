@@ -18,7 +18,7 @@ TimeLineJS: https://timeline.knightlab.com
 
 ---
 
-## Mock up
+## Mock up
 
 Il existe un logiciel gratuit:  Pencil (https://pencil.evolus.vn)
 
