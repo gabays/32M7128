@@ -5,7 +5,7 @@
 
 ---
 * CS: 32M7127
-* Salle: Uni Bastions  307
+* Salle: Les Philosophes 004
 * Horaire: mardi 10-12
 * GitHub: https://github.com/gabays/NumPat_1
 * Moodle: https://moodle.unige.ch/course/view.php?id=8260
