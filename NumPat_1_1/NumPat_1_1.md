@@ -1,9 +1,32 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
 Numériser le patrimoine I: standards et bonnes pratiques
 
 # Les Bonnes pratiques
 
 Simon Gabay
-Genève, 22 septembre 2020
+
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
+
 
 ---
 # Introduction
@@ -191,7 +214,7 @@ Les entités uniques, comme les personnes, les lieux, les objets… peuvent avoi
 
 Fiche GeoNames de Genève (https://www.geonames.org/2660646)
 
-![50% center](NumPat_1_1_images/geonames.png)
+![w:700 center](NumPat_1_1_images/geonames.png)
 
 
 ---
@@ -217,7 +240,7 @@ Exemple de licence sur [Wikipedia](https://fr.wikipedia.org/wiki/Fichier:Mona_Li
 ![45% center](NumPat_1_1_images/CC_wiki.png)
 
 ---
-![38% center](NumPat_1_1_images/Creative_commons_license_spectrum_fr.png)
+![w:400 center](NumPat_1_1_images/Creative_commons_license_spectrum_fr.png)
 
 ---
 ## Diffuser les données
@@ -232,7 +255,7 @@ Réaliser techniquement un projet ne suffit pas: il faut préparer la distributi
 
 ## _FAIR_
 
-![250% center](NumPat_1_1_images/FAIR.png)
+![w:550 center](NumPat_1_1_images/FAIR.png)
 
 ---
 * F (_findable_) car les données doivent être facilement trouvables, par un permalien par exemple et des métadonnées pour les moteurs de recherche
@@ -245,9 +268,9 @@ Réaliser techniquement un projet ne suffit pas: il faut préparer la distributi
 
 L'_open science_ est un enjeu fondamental, tant d'un point de vue numérique que scientifique. 
 
-* _open access_: ![2%](NumPat_1_1_images/open_access.png)
-* _open source_: ![3%](NumPat_1_1_images/open_source.png)
-* _open data_: ![10%](NumPat_1_1_images/open_data.png)
+* _open access_: ![w:25](NumPat_1_1_images/open_access.png)
+* _open source_: ![w:25](NumPat_1_1_images/open_source.png)
+* _open data_: ![w:100](NumPat_1_1_images/open_data.png)
 * _etc._
 
 L'intérêt de la démarche _open_ est citoyen (gratuité) mais aussi scientifique (reproductibilité, garantie qualité).
@@ -276,7 +299,7 @@ Cependant, il existe déjà des chaînes de traitement fonctionnelles et de trè
 ---
 ## Un exemple de chaîne de traitement pour l'édition numérique
 
-![50% center](NumPat_1_1_images/Workflow.jpg)
+![w:800 center](NumPat_1_1_images/Workflow.jpg)
 
 Source: Christof Schöch, _Digitale Textedition mit TEI_, [en ligne](https://de.dariah.eu/tei-tutorial).
 
