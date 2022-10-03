@@ -1,9 +1,31 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
 Numériser le patrimoine I: standards et bonnes pratiques
 
 # Langages
 
 Simon Gabay
-Genève
+
+<a style="float:right; width: 20%;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
 
 ---
 # Langages et vocabulaires
@@ -149,6 +171,17 @@ TABLE REALISATEURS
 ---
 ## Exercice
 
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+th {
+    color: blue;
+}
+</style>
+
 ```SQL
 SELECT titre FROM films
 ```
@@ -189,7 +222,6 @@ TABLE REALISATEURS
 Exemple de texte balisé en XML
 
 ```HTML
-<!DOCTYPE html>
 <html>
     <body>
         <h1>Filmographie</h1>
@@ -206,7 +238,9 @@ Même exemple balisé en HTML
 ---
 
 ![100%](images/Source_code_navigateur.png)
+
 Rendu du HTML dans le navigateur
+
 ---
 
 # Vocabulaire: l’exemple de la TEI
@@ -255,10 +289,10 @@ Comment choisir le nom des `<éléments>` et des `@attributs`?
 
 ---
 ## TEI (_Text Encoding Initiative_)
-􏰀 Elle est créé en 1987 (donc avant internet)
-􏰀 La TEI est pilotée par un consortium qui maintient et développe des recommandations pour l’encodage des textes
-􏰀 Ces recommandations sont en constantes évolutions
-􏰀 Elles sont disponibles en ligne http://www.tei-c.org/guidelines/
+* Elle est créé en 1987 (donc avant internet)
+* La TEI est pilotée par un consortium qui maintient et développe des recommandations pour l’encodage des textes
+* Ces recommandations sont en constantes évolutions
+* Elles sont disponibles en ligne http://www.tei-c.org/guidelines/
 
 ---
 ## D'autres vocabulaires que la TEI
