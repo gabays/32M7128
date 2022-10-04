@@ -73,9 +73,9 @@ Petite opération arithmétique en python.
 
 ---
 ## Langage de définition de données (_data definition language_, DDL)
-* manipuler les structures de données d’une base de données, et non les données elles-mêmes
-* Dans un tableur (par ex., excel), cela reviendrait à définir le nombre de colonnes et de lignes, ainsi que le le domaine des données
-* Exemple: SQL
+* Manipuler les structures de données d’une base de données, et non les données elles-mêmes
+* Dans un tableur (par ex., excel), cela reviendrait à définir le nombre de colonnes et de lignes, ainsi que le domaine des données
+* Exemple: SQL pour les bases relationnelles, RELAX NG pour le XML
 
 ---
 ```SQL
@@ -120,12 +120,15 @@ TABLE REALISATEURS
 ---
 ## Langage de manipulation de données (_data manipulation language_, DML)
 
-* permettent de réaliser les traitements sur les données
+* Permettent de réaliser les traitements sur les données
 * Dans un tableur (par ex., excel), cela reviendrait à remplir
 le tableau et aller chercher le contenu dans une table
-* Exemple: SQL
+* Exemple: SQL, SPARQL
 
 ---
+
+### SQL
+
 ```SQL
 ---------------------------------------------
 -- On remplit la table des films
@@ -139,11 +142,11 @@ INSERT INTO films (titre, sortie)
 ---------------------------------------------
 -- On remplit la table des réalisateurs
 ---------------------------------------------
-INSERT INTO films (nom, film_id)
+INSERT INTO realisateurs (nom, film_id)
   VALUES ('GEORGE LUCAS', 1)
-INSERT INTO films (nom, film_id)
+INSERT INTO realisateurs (nom, film_id)
   VALUES ('STEVEN SPIELBERG', 2)
-INSERT INTO films (nom, film_id)
+INSERT INTO realisateurs (nom, film_id)
   VALUES ('JAMES CAMERON', 3)
 ---------------------------------------------
 -- On fait une requête
@@ -152,6 +155,17 @@ SELECT nom FROM realisateurs
 ```
 
 ---
+
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+}
+th {
+    color: blue;
+}
+</style>
 
 TABLE FILMS
 | id |     titre     | sortie |
@@ -167,6 +181,10 @@ TABLE REALISATEURS
 | 1  | George Lucas     |   1    |
 | 2  | Steven Spielberg |   2    |
 | 3  | James Cameron    |   3    |
+
+Problèmes:
+* si on veut faire un classement aphabétique par le nom de famille?
+* logique de "silo" dans le nommage
 
 ---
 ## Exercice
@@ -202,12 +220,37 @@ TABLE REALISATEURS
 | 3  | James Cameron    |   3    |
 
 ---
+
+### SPARQL
+
+```
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+ PREFIX dc: <http://purl.org/dc/elements/1.1/>
+ SELECT DISTINCT ?nom ?image ?description
+ WHERE {
+ 	?personne rdf:type foaf:Person.
+ 	?personne foaf:name ?nom.
+ 	?image rdf:type foaf:Image.
+ 	?personne foaf:img ?image.
+ 	?image dc:description ?description
+ }
+```
+
+1. `PREFIX` pour les espaces de nom
+2. `SELECT` pour les variables
+3. `WHERE` pour les clauses de contraintes
+
+---
 ## Langage de de balisage (_Markup language_)
 
 * Spécialisés dans l’enrichissement d’information textuelle. Ils utilisent des balises, unités syntaxiques délimitant une séquence de caractères ou marquant une position précise à l’intérieur d’un flux de caractères
 * Exemple: HTML, XML ou LaTeX
 
 ---
+
+Exemple de texte balisé en XML:
+
 ```XML
 <doc>
     <partie>Filmographie</partie>
@@ -219,21 +262,20 @@ TABLE REALISATEURS
 </doc>
 ```
 
-Exemple de texte balisé en XML
+Exemple de texte balisé en XML (l'absence de `</p>` est volontaire)
 
 ```HTML
 <html>
     <body>
         <h1>Filmographie</h1>
         <h2>Films</h2>
-        <p>STAR WARS, INDIANA JONES, TITANIC</p>
+        <p>STAR WARS, INDIANA JONES, TITANIC
         <h2>Realisateurs</h2>
         <p>GEORGE LUCAS, STEVEN SPIELBERG, JAMES
           CAMERON</p>
     </body>
 </html>
 ```
-Même exemple balisé en HTML
 
 ---
 
@@ -254,10 +296,9 @@ Le langage de balisage fonctionne de manière simple
 ```
 1. Un `<élément>` est entre chevrons
 2. Une `<balise>` doit être fermé `</balise>`
-3. Une <balise1> ne doit <balise2> pas être croisé` </balise1>` avec un autre `</balise2>`
+3. Une `<balise1>` ne doit `<balise2>` pas être croisé `</balise1>` avec un autre `</balise2>`
 4. Une `<balise/>` peut être auto-fermante
-5. Un `<élément>` peut porter un `@attribut` (noté
-avec un `@`)
+5. Un `<élément>` peut porter un `@attribut` (noté avec un `@` en  langage naturel, mais _pas_ dans le code)
 6. L’`@attribut` a une `"valeur"` (entre guillemets)
 
 ---
@@ -265,19 +306,19 @@ avec un `@`)
 
 > On emploie _a priori_ les italiques pour les locutions et termes empruntés à d’autres langues.
 
-Procédural
+Procédural (en LaTeX: `\textit{a priori}`)
 ```XML
 On emploie <italique>a priori</italique> les italiques
 pour les locutions et termes empruntés à d’autres langues.
 ```
 
-Sémantique
+Sémantique (option I)
 ```XML
-On emploie<locutionEtrangère>a priori</locutionEtrangère>
+On emploie<locutionEtrangere>a priori</locutionEtrangere>
 les italiques...
 ```
 
-Sémantique II
+Sémantique (option II)
 ```XML
 On emploie<latin>a priori</latin> les italiques...
 ```
@@ -291,7 +332,7 @@ Comment choisir le nom des `<éléments>` et des `@attributs`?
 ## TEI (_Text Encoding Initiative_)
 * Elle est créé en 1987 (donc avant internet)
 * La TEI est pilotée par un consortium qui maintient et développe des recommandations pour l’encodage des textes
-* Ces recommandations sont en constantes évolutions
+* Ces recommandations sont en constante évolution
 * Elles sont disponibles en ligne http://www.tei-c.org/guidelines/
 
 ---
@@ -339,8 +380,8 @@ italiques...
 ## Valide vs bien formé
 
 Valide (_valid XML document_) vs bien formé (_well-formed XML document_)
-* "Bien formé" renvoie au langage et signifie que le document respecte les règles précédemment mentionnées (l’élément est entre chevron, une balise ouverte doit être fermée ...)
-* "Valide" renvoie au vocabulaire et signifie que le document répond aux exigences de la TEI (d’où l’expression "valide contre TEI ALL"
+* _Bien formé_ renvoie au langage et signifie que le document respecte les règles précédemment mentionnées (l’élément est entre chevron, une balise ouverte doit être fermée ...)
+* _Valide_ renvoie au vocabulaire et signifie que le document répond aux exigences de la TEI (d’où l’expression "valide contre TEI ALL")
 * Un schéma, qui est une sorte de dictionnaire qui permet de contrôler que le vocabulaire est bien utilisé, et donc que le document est valide
 
 ---
@@ -381,7 +422,7 @@ La TEI pose des problèmes
             <title>Example d'encodage TEI</title>
          </titleStmt>
          <publicationStmt>
-            <p>Université de Neuchâtel</p>
+            <p>Université de Genève</p>
          </publicationStmt>
          <sourceDesc>
             <p>Cours original</p>
