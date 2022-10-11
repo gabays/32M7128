@@ -92,7 +92,7 @@ un passage</span> pour telle et telle raison</div>
 
 ### Principaux éléments HTML (suite)
 
-- L'élément ```<ul>``` (unordered list) est une liste non numérotée
+- L'élément ```<ul>``` (_unordered list_) est une liste non numérotée
 ```HTML
 <ul>
   <li>un item</li>
@@ -128,29 +128,27 @@ On obtient une liste numérotée :
 
 ### Principaux éléments HTML (suite)
 
-- L'élément ```<a>``` permet de créer un lien. Il est utilisé avec ```href``` pour encoder l'adresse du lien
+- L'élément ```<a>``` permet de créer un lien. Il est utilisé avec ```@href``` pour encoder l'adresse du lien
 
 ```HTML
-<a href="www.unine.ch">uni de Neuch</a>
+<a href="www.unige.ch">uni de Genève</a>
 ```
 
-On obtient un lien
-
-[uni de Neuch](www.unine.ch)
+On obtient un lien du  type: [uni de Genève](www.unige.ch)
 
 - L'élément ```<meta>``` permet d'ajouter des metadonnées au document
 
 ```HTML
 <meta charset="utf-8"/>
 <meta name="keywords"
-       content="key1, key2"/>
+      content="key1, key2"/>
 ```
 
 ---
 
 ### Deux attributs importants
 
-- ```class``` permet de catégoriser l'élément (utile pour javascript et CSS).
+- ```@class``` permet de catégoriser l'élément (utile pour javascript et CSS).
 
 ```HTML
 <div>Ici commence une div où j'identifie une ville comme
@@ -160,7 +158,7 @@ On obtient un lien
   m'intéresse.</div>
 ```
 
-- ```id``` permet d'identifier un élément (utile pour javascript et CSS).
+- ```@id``` permet d'identifier un élément (utile pour javascript et CSS).
 
 ```HTML
 <div>Ici commence une div dans laquelle je veux
@@ -188,6 +186,14 @@ Plus d'informations sur [Wikipedia](https://fr.wikipedia.org/wiki/Feuilles_de_st
 ---
 ### Sélection
 
+<style scoped>
+table {
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+}
+</style>
+
 |SELECTEUR | DECLARATION
 |--- | ---
 |sélecteur| {
@@ -195,12 +201,13 @@ Plus d'informations sur [Wikipedia](https://fr.wikipedia.org/wiki/Feuilles_de_st
 | | propriété2: valeur2;
 | | …
 | | propriétéN: valeurN;
+| | }
 
 Syntaxe:
 - Sélecteur au début
-- Bloc de règles, délimité par les accolades {}
-- La propriété est séparée de la valeur par deux points :
-- Une règle se termine par point-virgule ;
+- Bloc de règles, délimité par les accolades `{}`
+- La propriété est séparée de la valeur par deux points `:`
+- Une règle se termine par point-virgule `;`
 
 ---
 
@@ -283,11 +290,11 @@ ___
 
 ### Emplacement
 
-1. _Inline_: à l'intérieur de l'```<élément>``` avec l'attribut ```style="css"```
+1. _Inline_: à l'intérieur de l'```<élément>``` avec l'attribut ```@style```
 ```HTML
 <h1 style="color:blue;">Heading 1</h1>
 ```
-2 _Interne_: avec l'élément ```<style>```
+2 _Interne_: avec l'élément ```<style>``` dans la balise `<head>`
 ```HTML
 <style>
   body {
@@ -303,6 +310,15 @@ ___
 
 ### Emplacement
 
+<style scoped>
+code {
+    float: right;
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+}
+</style>
+
 3. Externe
 ```HTML
 <!DOCTYPE html>
@@ -317,7 +333,8 @@ ___
 </html>
 ```
 
-nomCSS.css
+Contenu du fichier CSS
+
 ```CSS
   body {
          background-color: green;
@@ -339,14 +356,16 @@ racine
   |-img2.png
   |-img3.tif
 |-css
-  |-monCss.css
+  |-mon.css
 |-scripts
+  |-mon.js
 |-docs
   |-unPdf.pdf
   |-fichierDocx.docx
+|-README.md
 ```
 
-Dans ` <link rel="stylesheet" href="mon.css">`, la valeur de l'attribut `@href` n'est pas le nom du fichier `.css` mais le chemin vers le fichier `.css`, donc `monCss.css`.
+Dans ` <link rel="stylesheet" href="mon.css">`, la valeur de l'attribut `@href` n'est pas le nom du fichier `.css` mais le chemin vers le fichier `.css`, donc `mon.css`.
 
 ___
 
@@ -479,7 +498,7 @@ div[class="chapter"]   {
       }
 ```
 
-→ Toutes les ```<div>``` auront un fond vert, sauf celle avec un attribut ```type="chapter"```
+→ Toutes les ```<div>``` auront un fond vert, sauf celle avec un attribut ```@type="chapter"```
 
 ```CSS
 div[class="chapter"]   {
@@ -490,4 +509,4 @@ div {
 }
 ```
 
-→ Toutes les `<div>` auront un fond vert, même celle avec un attribut `type="chapter"`
+→ Toutes les `<div>` auront un fond vert, même celle avec un attribut `@type="chapter"`
