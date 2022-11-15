@@ -1,0 +1,39 @@
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/title> "La premi\u00E8re nuit roman" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/creator> "Marc L\u00E9vy" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/subject> "Romance" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/subject> "L\u00E9gende" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/description> "L'amour est l'ultime aventure, mais l'aventure n'est pas sans danger..." .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/publisher> "Paris : R. Laffont" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/date> "2009" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/type> "Text" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/format> "485 p. : ill. " .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/identifier> " Rero:R005209793 " .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/identifier> " ISBN:9782221113110" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/language> "French" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/coverage> "Oural" .
+<http://www.unige.ch/exemple_1> <http://purl.org/dc/elements/1.1/coverage> "Ethiopie" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/title> "La Joconde" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/title> "La Gioconda" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/creator> "Leonard de Vinci" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/subject> "Lisa Gherardini" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/description> "La Joconde est le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux. " .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/date> "1503-1506" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/type> "Painting" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/format> "Physical object" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/format> "77 \u00D7 53 cm" .
+<http://www.unige.ch/exemple_2> <http://purl.org/dc/elements/1.1/identifier> "INV. 779" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/title> "Fribourg/Freiburg, Archives de l'\u00C9tat de Fribourg/Staatsarchiv Freiburg, Archives du Chapitre St. Nicolas/Kapitelsarchiv St. Niklaus, CSN III.3.5 : Antiphonarium Lausannense. De Sanctis, pars hiemalis. Officium B.M.V. Commune Sanctorum" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/description> "This antiphonary with musical notation, whose text corresponds to the Lausanne Ordinary, contains the winter portion of the de Sanctis, the Officium B.M.V. and the Commune Sanctorum. The parchment codex was written between 1510 and 1517 in the workshop of Master Ruprecht (Fabri) in Fribourg by 2 hands (A and B). The book decorations are by Jakob Frank of the Augustinian monastery of Fribourg and an assistant." .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/publisher> "e-codices - Virtual Manuscript Library of Switzerland" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/date> "1510-1517 :: notBefore 1510 :: notAfter 1517" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/type> "Manuscript" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/format> "Parchment, 162 ff., 56.5 x 39.5 cm" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/identifier> "doi:10.5076/e-codices-aef-CSN-III-3-5" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/identifier> "https://www.e-codices.ch/en/list/one/aef/CSN-III-3-5" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/identifier> "Fribourg/Freiburg, Archives de l'\u00C9tat de Fribourg/Staatsarchiv Freiburg, Archives du Chapitre St. Nicolas/Kapitelsarchiv St. Niklaus, CSN III.3.5" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/source> "https://www.e-codices.ch/en/list/one/aef/CSN-III-3-5" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/language> "lat" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/relation> "Leisibach Joseph, Die liturgischen Handschriften des Kantons Freiburg (ohne Kantonsbibliothek), Freiburg 1977 (iter Helveticum, Subsidia 16), S. 42-44." .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/coverage> "Fribourg, Switzerland" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/rights> "e-codices / Fribourg/Freiburg, Archives de l'\u00C9tat de Fribourg/Staatsarchiv Freiburg (cf. https://www.e-codices.ch/en/about/terms)" .
+<http://www.unige.ch/exemple_3> <http://purl.org/dc/elements/1.1/preview_page> "https://www.e-codices.unifr.ch:443/loris/aef/aef-CSN-III-3-5/aef-CSN-III-3-5_001.jp2/full/,150/0/default.jpg" .
