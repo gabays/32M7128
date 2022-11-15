@@ -58,9 +58,10 @@ Deux options:
 `TeX` est un système logiciel libre de composition de documents. `LaTeX` est un langage et un système de composition de documents qui permet de simplifier l'utilisation de `Tex`. Il existe plusieurs distributions:
 - `MiKTeX` pour Windows
 - `MacTeX` pour Mac OS
+- `Tex Live` pour Mac OS
 
 ---
-## Les moteurs de compositions
+## Les moteurs de composition
 
 Il est nécessaire de compiler les documents `LaTeX` pour obtenir un pdf. Pour cela il existe plusieurs moteurs de composition (qui ne sont pas parfaitement compatibles):
 - `pdfTex` qui n'est plus développé (mais reste utilisable), et duquel dérive les deux suivants
