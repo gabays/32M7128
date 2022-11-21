@@ -24,6 +24,14 @@
 * `Cours_08`: [Transcrire à l'ère du numérique](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
 
 ---
+## Quoi installer?
+
+Vous aurez besoin:
+* D'un éditeur de code, comme [Sublime Text](https://www.sublimetext.com).
+* Un éditeur XML peut être utile. L'université fournit des licences pour [Oxygen XML](https://www.oxygenxml.com).
+* D'un compte sur [Overleaf](https://www.overleaf.com)
+
+---
 ### Cite this repository
 
 Simon Gabay, _Numériser le patrimoine I: standards et bonnes pratiques_, Genève: Université de Genève, 2020, [https://github.com/gabays/https://github.com/gabays/NumPat_1](https://github.com/gabays/https://github.com/gabays/NumPat_1).
