@@ -4,17 +4,24 @@
 * Genève, semestre d'automne
 
 ---
-* CS: 32M7127
+* CS: 32M7128
 * Salle: Les Philosophes 004
 * Horaire: mardi 10-12
 * GitHub: https://github.com/gabays/NumPat_1
 * Moodle: https://moodle.unige.ch/course/view.php?id=8260
-* Catalogue des cours: https://wwwi.unige.ch/cursus/programme-des-cours/web/teachings/details/2020-32M7127
+* Catalogue des cours: https://wwwi.unige.ch/cursus/programme-des-cours/web/teachings/details/2022-32M7128
 
 ---
 ## Programme
 
-* `Cours_01`: [Les Bonnes pratiques](https://github.com/gabays/NumPat_1/tree/master/NumPat_1_1)
+* `Cours_01`: [Les Bonnes pratiques](https://github.com/gabays/NumPat_1/tree/master/Cours_01)
+* `Cours_02`: [Les Langages](https://github.com/gabays/NumPat_1/tree/master/Cours_02)
+* `Cours_03`: [LaTeX](https://github.com/gabays/NumPat_1/tree/master/Cours_03)
+* `Cours_04`: [Management de projet](https://github.com/gabays/NumPat_1/tree/master/Cours_04)
+* `Cours_05`: [HTML & CSS](https://github.com/gabays/NumPat_1/tree/master/Cours_05)
+* `Cours_06`: [Git](https://github.com/gabays/NumPat_1/tree/master/Cours_05)
+* `Cours_07`: [Modéliser les données](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
+* `Cours_08`: [Transcrire à l'ère du numérique](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
 
 ---
 ### Cite this repository
