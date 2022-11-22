@@ -21,7 +21,9 @@
 * `Cours_05`: [HTML & CSS](https://github.com/gabays/NumPat_1/tree/master/Cours_05)
 * `Cours_06`: [Git](https://github.com/gabays/NumPat_1/tree/master/Cours_05)
 * `Cours_07`: [Modéliser les données](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
-* `Cours_08`: [Transcrire à l'ère du numérique](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
+* `Cours_08`: [L'image](https://github.com/gabays/NumPat_1/tree/master/Cours_08)
+* `Cours_09`: [L'analyse de mise en page](https://github.com/gabays/NumPat_1/tree/master/Cours_09)
+* `Cours_10`: [Transcrire](https://github.com/gabays/NumPat_1/tree/master/Cours_10)
 
 ---
 ## Quoi installer?
