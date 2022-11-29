@@ -55,12 +55,20 @@ Genève
 | ![w:250](images/1919_01_LAD_N504_6_grey.jpg) | ![w:250](images/1919_01_LAD_N504_6_bin.jpg)|
 
 ---
+## Binarisations
+Le principe de la binarisation d'une image esrt de déterminer un seuil: les pixels dont le niveau de gris est en dessous du seuil deviennent noirs, et ceux au dessus deviennent blanc.
+
+On n'utilise plus de seuil global (i.e. pour la page) mais par exemple des seuils contextuels calculés à partir de la moyenne et de la cote z d'une fenêtre centrée sur le pixel. Il existe une multitude de techniques plus ou moins efficaces comme Niblack ou son amélioration par Sauvola (cf. image).
+
+![w:950](images/binarisation.png)
+
+
+---
 ## Segmentation I
 
 | Original 									| Résultat							   		   |
 |-------------------------------------------|----------------------------------------------|
 | ![w:250](images/1919_01_LAD_N504_6_bin.jpg) | ![w:250](images/1919_01_LAD_N504_6_bin_seg.jpg)|
-
 
 ---
 ## Segmentation: mise en page
@@ -75,11 +83,118 @@ Genève
 L'OCR fonctionnant au niveau des lignes, il est fondamental de les extraire au mieux. L'utilisation d'outil dédié à la segmentation, et non d'un segmenteur intégré à l'OCR, peut être intéressant
 
 ---
-## Segmentation: ornements
+## Segmentation: la décoration
 
-![w:250](images/Sales1641_introduction_bpt6k1041711s_0025_ornement.jpg)
+![w:350](images/Sales1641_introduction_bpt6k1041711s_0025_ornement.jpg)
 
 Le segmenteur peut extraire plus que des lignes: il peut extraire, par exemple, des ornements (bandeaux, initiales, culs-de-lampe…)
+
+---
+
+# Principes d'apprentissage machine
+
+---
+## Apprendre pour une machine
+
+Pour faire faire quelque chose à une machine, on a deux possibilités:
+1. Donner des règles à la machine: _suivons_ a pour lemme _suivre_. Le problème c'est qu'il existe des cas ambigus: _suis_? Il faut alors rajouter des règles toujours complexes
+2. Donner des exemples à la machine, qui va déduire des règles à partir des exemples: _je suis un homme_ -> _être_ vs _je suis le cours_ -> _suivre_
+
+---
+## L'IA c'est quoi?
+
+L'intelligence artificielle se fonde sur des approches mathématiques et statistiques pour donner aux ordinateurs la capacité d'« apprendre » à partir de données, c'est-à-dire d'améliorer leurs performances à résoudre des tâches sans être explicitement programmés pour chacune.
+
+Il existe plusieurs méthodes:
+* Machines à vecteurs de support
+* Méthodes statistiques
+* Les réseaux de neurones
+* …
+
+
+---
+## Préparer un dataset
+Il va nous falloir trois jeux de données:
+* Pour l'entraînement: les données sont regardées par la machine pour déduire les règles
+* Pour la validation: les données sont utilisées pour contrôler l'aprentissage sur les données d'entraînement à chaque itération, avec le risque que la machine se mette à bachoter
+* Pour le test final: les données, qui n'ont jamais été vues pendant l'entraînement, vont permettre de contrôler la qualité finale
+
+---
+## Répartition du dataset
+
+![w:800](images/dataset.png)
+
+---
+## Le règne de la quantité
+
+L'IA est extrêmement gourmande en données: le plus c'est le mieux, il en faut donc un maximum. Il peut donc être utile de mutualiser les données, comme le propose le projet _HTR United_:
+
+https://htr-united.github.io
+
+Mais pour partager des données, il faut qu'elles soient compatibles entre elles, tant du point de vue du format que de l'annotation:
+* On ne peut pas mélanger des données en ALTO et en PAGExml
+* Si certains transcrivent _v_ et d'autres _u_ c'est potentiellement un problème
+* Si certains distinguent les colonnes et d'autre pas ça ne va pas
+* …
+
+---
+## Roadmap pour l'entraînement
+
+![w:700](images/model.png)
+
+---
+## Petit lexique
+
+* Modèle: somme de ce qui a été appris par la machine au cours de l'apprentissage
+* Itération: cycle d'entrainement pendant le quel l'ordinateur voit toutes les données d'entraînement
+* Surentraînement (_overfitting_): à force d'être évaluée sur le même jeu de validation à chaque itération, la machine se met à n'apprendre que pour passer ce test
+* Généralisation: capacité du modèle à traiter des données qu'il n'a jamais vues.
+* Arrêt prématuré (_early stopping_): arrêt de l'entraînement avant le surentraînement
+* _Fine tuning_: on repart depuis un modèle déjà entraîné, auquel on ajoute une couche d'information
+
+---
+## Le résultat
+
+On utilise pour évaluer un modèle un score dit "F1", calculé à partir de la précision (_accuracy_) et du rappel (_recall_):
+* Le rappel calcule le nombre de positifs bien prédit par notre modèle.
+* La précision calcule le nombre de prédictions positives bien effectuées.
+
+On parle donc:
+* De faux négatif, quand le résultat est déclaré positif mais est en réalité négatif. La machine s'est trompée.
+* De vrai négatif, quand le résultat est déclaré négatif mais est en réalité positif. La machine a oublié quelque chose.
+
+---
+## Score F1
+
+![w:320](images/f1.png)
+
+---
+## IoU
+
+On utilise aussi l'intersection sur l'union (_Intersection over union_), plus adapté pour des zones (sur une page par exemple).
+
+![w:800](images/iou.png)
+
+---
+
+![w:1200](images/iou_ex.png)
+
+---
+## Sur le test
+Le score du test n'a pas de valeur en soi, elle dépend:
+* Des données d'entraînement
+* Des données dans le jeu de test
+
+99% sur 10 000 images ne vaut pas (forcément) 99% sur 1000 images
+
+Pour le test, on peut utiliser des données:
+* _In domain_: elles sont proches du jeu d'entraînement (tirées du même livre par exemple)
+* _Out of domain_: elles sont différentes du jeu d'entraînement -- la question étant de savoir jusqu'à quel point différentes
+
+---
+## Exercice
+
+Regardez le dossier `Exercices` et tenter de trouver un dénominateur commun à toutes ces images
 
 ---
 
@@ -202,39 +317,24 @@ div.twocols p.break {
 
 ## `DamageZone`
 
-## Definition
-
-**DamageZone:** characterises any area containing damage to the source, such as holes in the material (parchment, paper…), blots, etc.
-
-## Subtypes
-
-Suggested values include:
-
-* `DamageZone:corrosion` (_corrosion_)
-* `DamageZone:hole` (_trou_)
-* `DamageZone:mold` (_moisissure_)
-* `DamageZone:peeled` (_desquamé_)
-* `DamageZone:soaked` (_détrempé_)
-* `DamageZone:scuffed` (_eraillé_)
+* Definition: characterises any area containing damage to the source, such as holes in the material (parchment, paper…), blots, etc.
+* Subtypes: suggested values include:
+  * `DamageZone:corrosion` (_corrosion_)
+  * `DamageZone:hole` (_trou_)
+  * `DamageZone:mold` (_moisissure_)
+  * `DamageZone:peeled` (_desquamé_)
+  * `DamageZone:soaked` (_détrempé_)
+  * `DamageZone:scuffed` (_eraillé_)
 …
 
-
-
 ---
-
 ## `DamageZone` 2
+Examples:
 
-## Examples
+| `DamageZone:soaked` 									| `DamageZone:hole`							   		   |
+|-------------------------------------------|----------------------------------------------|
+| ![w:380](SegmOnto/BB57.png) | ![w:320](SegmOnto/e-codices_Mslitt-0010-1.jpg)|
 
-* `DamageZone:soaked`
-
-<img src="SegmOnto/BB57.png" height="130px">
-
-* `DamageZone:hole`
-
-<img src="SegmOnto/e-codices_Mslitt-0010-1.jpg" height="130px">
- 
-## Justification
 
 Identifying damaged area might prove useful, as they can affect the result of text prediction.
 
@@ -242,421 +342,322 @@ Identifying damaged area might prove useful, as they can affect the result of te
 
 ## `DigitizationArtefactZone`
 
-### Definition
+* Definition: it contains any type of item external to the document itself, but due to the process of digitisation, such as rulers or color tables added to help analyse the image.
+* Subtypes: suggested values include:
 
-**DigitizationArtefactZone:** contains any type of item external to the document itself, but due to the process of digitisation, such as rulers or color tables added to help analyse the image.
+| `DigitizationArtefactZone:testCard` 									| `DigitizationArtefactZone:ruler`							   		   |
+|-------------------------------------------|----------------------------------------------|
+| ![w:300](SegmOnto/Berlin_Stabi_Darmst_2m_1660.jpg) | ![w:99](SegmOnto/BGE_cl0269_bindingRulerS.png)|
 
-### Subtypes
-
-Suggested values include:
-
-* `DigitizationArtefactZone:testCard` <img src="SegmOnto/Berlin_Stabi_Darmst_2m_1660.jpg" height="150px">
-
-* `DigitizationArtefactZone:ruler` <img src="SegmOnto/BGE_cl0269_bindingRulerS.png" height="150px">
 
 ---
 
 ## `DropCapitalZone`
 
-### Definition
+* Definition: contains any type of initial letter, occupying a space corresponding to several lines of the main text or bearing significant ornementation, be they historiated, ornated, flourished or painted initials (and excluding the following text line).
 
-**DropCapitalZone:** contains any type of initial letter, occupying a space corresponding to several lines of the main text or bearing significant ornementation, be they historiated, ornated, flourished or painted initials (and excluding the following text line).
+* Subtypes: suggested values include:
 
-### Subtypes
-
-Suggested values include:
-
-* `DropCapitalZone:historiated`
-* `DropCapitalZone:floriate`
-* `DropCapitalZone:flourish`
-* `DropCapitalZone:voided`
-* `DropCapitalZone:parted`
+  * `DropCapitalZone:historiated`
+  * `DropCapitalZone:floriate`
+  * `DropCapitalZone:flourish`
+  * `DropCapitalZone:voided`
+  * `DropCapitalZone:parted`
 
 ---
 
 ## `DropCapitalZone`
 
-* `DropCapitalZone:champ`
-* `DropCapitalZone:facetted`
-* `DropCapitalZone:plain`
-* `DropCapitalZone:interlocked`
+  * `DropCapitalZone:champ`
+  * `DropCapitalZone:facetted`
+  * `DropCapitalZone:plain`
+  * `DropCapitalZone:interlocked`
 
-### Examples
+| Initiale manuscrite 									| initiale imprimée							   		   |
+|-------------------------------------------|----------------------------------------------|
+| ![w:290](SegmOnto/btv1b84259980_f68.jpg) | ![w:500](SegmOnto/btv1b86070385_f78.jpg)|
 
-<img src="SegmOnto/btv1b84259980_f68.jpg" height="150px">
-<img src="SegmOnto/btv1b86070385_f78.jpg" height="150px">
+
 
 ---
 
 ## `GraphicZone`
 
-### Definition
+* Definition: characterises a zone containing any type of graphic element, from purely ornamental  to consubstantial to the text (e.g., full page paintings, line-fillers, marginal drawings, figures, etc.).
+* Subtypes: suggested values include:
 
-**DecorationZone:** characterises a zone containing any type of graphic element, from purely ornamental  to consubstantial to the text (e.g., full page paintings, line-fillers, marginal drawings, figures, etc.).
-
-### Subtypes
-
-Suggested values include:
-
-* `GraphicZone:illustration`
-* `GraphicZone:ornamentation`
-* `GraphicZone:figure`
+  * `GraphicZone:illustration`
+  * `GraphicZone:ornamentation`
+  * `GraphicZone:figure`
 
 ---
 ## `GraphicZone`
 
-### Examples
+| `GraphicZone:illustration` 								| `GraphicZone:ornamentation`							   		   |
+|-------------------------------------------|----------------------------------------------|
+| ![w:144](SegmOnto/btv1b84259980_f466.jpg) | ![w:290](SegmOnto/btv1b86070385_f65.jpg) |
 
-* `GraphicZone:illustration`
 
-<img src="SegmOnto/btv1b84259980_f466.jpg" height="130px">
-
-* `GraphicZone:ornamentation`
-
-<img src="SegmOnto/btv1b86070385_f65.jpg" height="130px">
-
-* `GraphicZone:figure`
-
-<img src="SegmOnto/btv1b8601519p_f219.jpg" height="130px">
-<img src="SegmOnto/Latin_7295A__btv1b10027322j_23.jpeg" height="130px">
+| `GraphicZone:figure` 									    | `GraphicZone:figure`							   		   |
+|-------------------------------------------|----------------------------------------------|
+| ![w:300](SegmOnto/btv1b8601519p_f219.jpg) | ![w:198](SegmOnto/Latin_7295A__btv1b10027322j_23.jpeg) |
 
 ---
 
 ## `MainZone`
 
-### Definition
+* Definition the main area (text column) designed to contain text, either as a single  or several columns (as designed in the conception of the layout: including eventually text, music notations, illumination, etc.).
 
-**MainZone**: the main area (text column) designed to contain text, either as a single  or several columns (as designed in the conception of the layout: including eventually text, music notations, illumination, etc.).
+* Subtypes: suggested values include:
 
-### Subtypes
+| `MainZone:column` 								| `MainZone:column#1` and `MainZone:column#1`							   		   |
+|-------------------------------------------|----------------------------------------------|
+| ![w:110](SegmOnto/btv1b8601519p_f144.jpg) | ![w:110](SegmOnto/ex1.png) |
 
-Suggested values include:
 
-- `MainZone#column`
-
-### Examples
-
-<img src="SegmOnto/btv1b8601519p_f144.jpg" height="80px">
-
-- `MainZone:column#1` and `MainZone:column#1`
-
-<img src="SegmOnto/ex1.png" height="80px">
 
 
 ---
 
 ## `MarginTextZone`
 
-## Definition
+* Definition: characterises any **text zone** contained in the margins (upper, lower, inner or outer), including the space between two columns, whatever their semantic status (gloss, additions, …).
 
-**MarginTextZone:** characterises any **text zone** contained in the margins (upper, lower, inner or outer), including the space between two columns, whatever their semantic status (gloss, additions, …).
+* Subtypes: suggested values include:
 
-## Subtypes
-
-Suggested values include:
-
-* `MarginTextZone:note`
-* `MarginTextZone:commentary`
-* `MarginTextZone:correction`
-* `MarginTextZone:variants`
+  * `MarginTextZone:note`
+  * `MarginTextZone:commentary`
+  * `MarginTextZone:correction`
+  * `MarginTextZone:variants`
 
 ---
-
 ## `MarginTextZone`
 
-## Examples
+| `MarginTextZone` 								          | .                 							   		   |
+|-------------------------------------------|------------------------------------------|
+| ![w:260](SegmOnto/btv1b6000371s_f21.jpg) | ![w:180](SegmOnto/btv1b86070385_f144.jpg) |
 
-<img src="SegmOnto/btv1b6000371s_f21.jpg" height="150px">
-<img src="SegmOnto/btv1b86070385_f144.jpg" height="150px">
-
-* `MarginTextZone:variantes`  `MarginTextZone:note`)
-
-<img src="SegmOnto/corpus_christianorum.jpg" height="300px">
+| `MarginTextZone:variantes` 			            | `MarginTextZone:variantes`			   		      |
+|---------------------------------------------|---------------------------------------------|
+| ![w:110](SegmOnto/corpus_christianorum.jpg) | ![w:110](SegmOnto/corpus_christianorum.jpg) |
 
 ---
 
 ## `MusicZone`
 
-### Definition
+* Definition: characterises an area containing musical notations, such as neumes, staves, etc., with the possible inclusions of text.
 
-**MusicZone:** characterises an area containing musical notations, such as neumes, staves, etc., with the possible inclusions of text.
+* Subtypes: none
 
-### Subtypes
+* Examples:
 
-None
+| `MusicZone` imprimée 			                  | `MusicZone` manuscrite    			   		      |
+|---------------------------------------------|---------------------------------------------|
+| ![w:250](SegmOnto/btv1b8446952v_f33.jpg)    | ![w:230](SegmOnto/btv1b84192440_f58.jpg)    |
 
-### Examples
-
-<img src="SegmOnto/btv1b8446952v_f33.jpg" height="190px">
-<img src="SegmOnto/btv1b84192440_f58.jpg" height="190px">
 
 ---
 
 ## `NumberingZone`
 
-### Definition
+* Definitio: it characterises a zone containing the page number.
 
-**NumberingZone:** characterises a zone containing the page number.
+* Subtypes: suggested values include:
+  * `NumberingZone:page`
+  * `NumberingZone:other`
 
-### Subtypes
+* Examples
 
-Suggested values include:
+| `NumberingZone:folio`             		      | `NumberingZone:page`    	    		   		    |
+|---------------------------------------------|---------------------------------------------|
+| ![w:190](SegmOnto/btv1b84192440_f45.jpg)    | ![w:190](SegmOnto/btv1b86070385_f135_p.jpg) |
 
-
-* `NumberingZone:page`
-* `NumberingZone:other`
-
-### Examples
-
-<img src="SegmOnto/btv1b84192440_f45.jpg" height="190px">
-<img src="SegmOnto/btv1b86070385_f135_p.jpg" height="190px">
 
 ---
-
 ## `QuireMarksZone`
 
-### Definition
+* Definition: characterises a zone containing a quire signature (i.e., _a ii_), catchword, or any kind of element relative to the material organisation of the source, with the exclusion of page numbers.
 
-**QuireMarksZone:** characterises a zone containing a quire signature (i.e., _a ii_), catchword, or any kind of element relative to the material organisation of the source, with the exclusion of page numbers.
-
-### Subtypes
-
-Suggested values include:
-
-* `QuireMarksZone:signature`
-* `QuireMarksZone:catchwords`
+* Subtypes: suggested values include:
+  * `QuireMarksZone:signature`
+  * `QuireMarksZone:catchwords`
 
 ---
-
 ## `QuireMarksZone`
+* Examples
+  * `QuireMarksZone:signature`
 
-### Examples
+![w:420](SegmOnto/bpt6k1280589b_f17.jpg)
 
-* `QuireMarksZone:catchwords`
+  * `QuireMarksZone:catchwords`
 
-<img src="SegmOnto/btv1b8451116z_f340.jpg" height="100px">
-<img src="SegmOnto/bpt6k1280589b_f86.jpg" height="100px">
+| `QuireMarksZone` manuscrite            		  | `QuireMarksZone` imprimée   	   		     |
+|---------------------------------------------|------------------------------------------|
+| ![w:270](SegmOnto/btv1b8451116z_f340.jpg)   | ![w:380](SegmOnto/bpt6k1280589b_f86.jpg) |
 
-* `QuireMarksZone:signature`
 
-<img src="SegmOnto/bpt6k1280589b_f17.jpg" height="100px">
 
 ---
 
 ## `RunningTitleZone`
 
-### Definition
+* Definition: characterises a zone containing a running title.
 
-**RunningTitleZone:** characterises a zone containing a running title.
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
+| `RunningTitleZone` imprimée            	  | `RunningTitleZone` manuscrite   	   	    |
+|-------------------------------------------|-------------------------------------------|
+| ![w:440](SegmOnto/bpt6k1280589b_f24.jpg)  | ![w:490](SegmOnto/btv1b84259980_f112.jpg) |
 
-### Examples
-
-<img src="SegmOnto/bpt6k1280589b_f24.jpg" height="150px">
-
-<img src="SegmOnto/btv1b84259980_f112.jpg" height="150px">
 
 ---
 
 ## `SealZone`
 
-### Definition
+* Definition: it characterises a zone containing a seal.
 
-**SealZone:** characterises a zone containing a seal.
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
+![w:740](SegmOnto/btv1b10540051s_f273.jpg)![w:150](SegmOnto/btv1b550082631_f1.jpg)
 
-### Examples
-
-<img src="SegmOnto/btv1b10540051s_f273.jpg" height="150px">
-<img src="SegmOnto/btv1b550082631_f1.jpg" height="150px">
 
 ---
 
 ## `StampZone`
 
-## Definition
+* Definition: it characterises a zone containing a stamp, be it a library stamp or a mark from a postal service.
 
-**StampZone:** characterises a zone containing a stamp, be it a library stamp or a mark from a postal service.
-
-## Subtypes
-
-Suggested values include:
-
-* `StampZone:postal`
-* `StampZone:curatorial`
+* Subtypes: suggested values include:
+  * `StampZone:postal`
+  * `StampZone:curatorial`
 
 ---
 
 ## `StampZone`
 
-## Examples
+* Examples
+  * `StampZone:curatorial`
+
+![w:300](SegmOnto/bpt6k1520316t_f35.jpg)
+![w:300](SegmOnto/btv1b6000371s_f21_stamp.jpg)
 
 * `StampZone:postal`
 
-<img src="SegmOnto/bpt6k1520316t_f35.jpg" height="150px">
-<img src="SegmOnto/btv1b6000371s_f21_stamp.jpg" height="150px">
-
-* `StampZone:postal`
-
-<img src="SegmOnto/wiki_Esternay_Carte_postale_Tampon.jpg" height="150px">
+![w:150](SegmOnto/wiki_Esternay_Carte_postale_Tampon.jpg)
 
 ---
 
 ## `TableZone`
 
-### Definition
+* Definition: characterises a zone containing a table of any kind.
 
-**TableZone:** characterises a zone containing a table of any kind.
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
+| `TableZone`                           	  | `TableZone`                      	   	    |
+|-------------------------------------------|-------------------------------------------|
+| ![w:160](SegmOnto/bpt6k106140h_2.jpeg)    | ![w:280](SegmOnto/btv1b10027322j_f41.jpg) |
 
-### Examples
-
-<img src="SegmOnto/bpt6k106140h_2.JPEG" height="250px">
-<img src="SegmOnto/btv1b10027322j_f41.jpg" height="250px">
 
 ---
 
 ## `TitlePageZone`
 
-### Definition
+* Definition: it characterises a zone containing a title distinct from the main text. It is mainly used for prints.
 
-**TitlePageZone:** characterises a zone containing a title distinct from the main text. It is mainly used for prints.
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
-
-### Examples
-
-<img src="SegmOnto/bpt6k111470b_f1.jpg" height="250px">
-<img src="SegmOnto/bpt6k1520316t_f7.jpg" height="250px">
+| `TitlePageZone` manuscrite                | `TitlePageZone` imprimée              	  |
+|-------------------------------------------|-------------------------------------------|
+| ![w:100](SegmOnto/bpt6k111470b_f1.jpg)    | ![w:85](SegmOnto/bpt6k1520316t_f7.jpg)    |
 
 ---
-
 ## `CustomLine`
 
-### Definition
+* Definition: characterises any kind of line not fitting in the other categories, according to any convenient typology the user chooses.
 
-**CustomLine:** characterises any kind of line not fitting in the other categories, according to any convenient typology the user chooses.
+* Subtypes: Any
 
-
-### Subtypes
-
-Any
-
-### Justification
-
-All projects have specific needs regarding types of lines peculiar to their sources or their goals and  not covered by the standard types.
+* Justification: all projects have specific needs regarding types of lines peculiar to their sources or their goals and  not covered by the standard types.
 
 ---
-
 ## `DefaultLine`
 
-### Definition
+* D*efinition: it characterises any kind of standard text line, whether they are included in the `MainZone` text, in the `MarginZone`, in `MusicZone`, or in any type of zone.
 
-**DefaultLine:** characterises any kind of standard text line, whether they are included in the `MainZone` text, in the `MarginZone`, in `MusicZone`, or in any type of zone.
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
-
-### Examples
-
-<img src="SegmOnto/btv1b8601519p_f144.jpg" height="130px">
-<img src="SegmOnto/btv1b84259980_f47.jpg" height="130px">
+| `DefaultLine` imprimée                    | `DefaultLine` manuscrite              	  |
+|-------------------------------------------|-------------------------------------------|
+| ![w:100](SegmOnto/btv1b8601519p_f144.jpg) | ![w:100](SegmOnto/btv1b84259980_f47.jpg)  |
 
 ---
-
 ## `DropCapitalLine`
 
-### Definition
+* Definition: characterises a line on which rests a [`DropCapital`](https://github.com/SegmOnto/examples/tree/main/zones/DropCapital).
 
-**DropCapitalLine:** characterises a line on which rests a [`DropCapital`](https://github.com/SegmOnto/examples/tree/main/zones/DropCapital).
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
+| `DefaultLine` imprimée                    | `DefaultLine` manuscrite              	  |
+|-------------------------------------------|-------------------------------------------|
+| ![w:200](SegmOnto/btv1b84259980_f68.jpg) | ![w:400](SegmOnto/btv1b86070385_f78.jpg)  |
 
-### Examples
-
-<img src="SegmOnto/btv1b84259980_f68.jpg" height="150px">
-<img src="SegmOnto/btv1b86070385_f78.jpg" height="150px">
-
-### Justification
-
-Drop capitals are both specific zones, and bear a text.
+* Justification: drop capitals are both specific zones, and bear a text.
 
 ---
-
 ## `InterlinearLine`
 
-### Definition
+* . Definition: characterises a line that is not a standard text line, but as been added between two of them, for instance to include a forgotten word.
 
-**InterlinearLine:** characterises a line that is not a standard text line, but as been added between two of them, for instance to include a forgotten word.
+* Subtypes: suggested values include:
 
-### Subtypes
+  - `InterlinearLine:commentary`
+  - `InterlinearLine:correction`
 
-Suggested values include:
+* Examples
 
-- `InterlinearLine:commentary`
-- `InterlinearLine:correction`
+  - `InterlinearLine:correction`
 
-### Examples
-
-- `InterlinearLine:correction`
-
-<img src="SegmOnto/btv1b6000371s_f21_inter.jpg" height="100px">
+![w:600](SegmOnto/btv1b6000371s_f21_inter.jpg)
 
 ---
-
 ## `MusicLine`
 
-### Definition
+* Definition: caracterises the central line of a musical stave.
 
-**MusicLine:** caracterises the central line of a musical stave.
+* Subtypes: none
 
-### Subtypes
+* Examples
 
-None
+![w:400](SegmOnto/btv1b8446952v_f33.jpg)![w:300](SegmOnto/btv1b84192440_f58.jpg)
 
-### Examples
 
-<img src="SegmOnto/btv1b8446952v_f33.jpg" height="150px">
-<img src="SegmOnto/btv1b84192440_f58.jpg" height="150px">
-
-### Justification
-
-Analysis or prediction of musical content can be as necessary as the text's.
+* Justification: analysis or prediction of musical content can be as necessary as the text's.
 
 ---
+## `HeadingLine`
 
-## `RubricLine`
+* Definition: characterises a line containing a rubric, for instance signalling the beginning of a new text.
 
-### Definition
+* Subtypes: suggested values include:
 
-**RubricLine:** characterises a line containing a rubric, for instance signalling the beginning of a new text.
+  - `HeadingLine:incipit`
+  - `HeadingLine:explicit`
+  - `HeadingLine:title`
 
-### Subtypes
-
-Suggested values include:
-
-- `RubricLine:incipit`
-- `RubricLine:explicit`
-- `RubricLine:title`
-
-### Examples
-
-<img src="SegmOnto/bpt6k1280589b_f15.jpg" height="160px">
-<img src="SegmOnto/btv1b84259980_f29.jpg" height="160px">
+* Examples
+![w:400](SegmOnto/btv1b84259980_f29.jpg)![w:200](SegmOnto/bpt6k1280589b_f15.jpg)
 
 ---
 
@@ -675,12 +676,12 @@ Après avoir cliqué sur `Create new Document`, plusieurs éléments sont à pr�
 ---
 ## La description du document
 
-![100% center](img_tuto/Description.png)
+![w:1000](img_tuto/Description.png)
 
 ---
 ## Métadonnées remplies automatiquement via IIIF
 
-![80% center](img_tuto/Metadata_iiif.png)
+![w:500](img_tuto/Metadata_iiif.png)
 
 ---
 ## La description du document (2)
@@ -691,13 +692,13 @@ La dernière étape consiste à mettre à jour l'ontologie du document afin qu'e
 - ajouter manuellement *CustomZone*, *DamageZone*, *DigitizationArtefactZone*, *DropCapitalZone*, *GraphicZone*, *MainZone*, *MarginTextZone*, *MusicZone*, *NumberingZone*, *QuireMarksZone*, *SealZone*, *StampZone*, *TableZone* et *TitlePageZone* (15 éléments au total).
 
 *Line types* :
-- ajouter manuellement *CustomLine*, *DefaultLine*, *DropCapitalLine*, *InterlinearLine*, *MusicLine* and *RubricLine* (6 éléments au total).
+- ajouter manuellement *CustomLine*, *DefaultLine*, *DropCapitalLine*, *InterlinearLine*, *MusicLine* and *HeadingLine* (6 éléments au total).
 - Enfin, appuyer sur `Create`.
 
 ---
 ## L'ontologie
 
-![80% center](img_tuto/Ontology.png)
+![w:900](img_tuto/Ontology.png)
 
 ---
 
@@ -706,7 +707,7 @@ La dernière étape consiste à mettre à jour l'ontologie du document afin qu'e
 ---
 ## Images
 
-![100% center](img_tuto/Images.png)
+![w:1000](img_tuto/Images.png)
 
 ---
 
@@ -721,12 +722,12 @@ La dernière étape consiste à mettre à jour l'ontologie du document afin qu'e
 ---
 ## Paramètres pour la segmentation par régions
 
-![50% center](img_tuto/Segment_regions.png)
+![w:500](img_tuto/Segment_regions.png)
 
 ---
 ## Exemple de résultat
 
-![80% center](img_tuto/Segment_sans_correction.png)
+![w:500](img_tuto/Segment_sans_correction.png)
 
 ---
 ## Corrections

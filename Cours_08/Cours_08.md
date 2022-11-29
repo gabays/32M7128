@@ -124,7 +124,7 @@ Résolution d’une page A4: (dpi*(21/2.54)) * (dpi*(29.7/2.54))
 
 L'enjeu est de réussir ce que nous appellerons le _B-test_
 
-![42%](images/t_pixels_009.jpeg) ![800%](images/t_pixels_010.jpeg) ![700%](images/t_pixels_011.jpeg)
+![w:200](images/t_pixels_009.jpeg) ![w:200](images/t_pixels_010.jpeg) ![w:175](images/t_pixels_011.jpeg)
 
 
 ---
@@ -134,7 +134,7 @@ Il n’est pas nécessaire d’avoir un grand nombre de pixels (au contraire) p
 
 La schématisation de l'image obtenue par sa pixelisation est une force: trop d'information tue l'information.
 
-!![w:180](images/t_pixels_001.jpeg) !![w:180](images/t_pixels_002.jpeg) !![w:180](images/t_pixels_003.jpeg) !![w:400](images/t_pixels_007.jpeg)
+![w:180](images/t_pixels_001.jpeg) ![w:180](images/t_pixels_002.jpeg) ![w:180](images/t_pixels_003.jpeg) ![w:400](images/t_pixels_007.jpeg)
 
 ---
 
@@ -270,7 +270,7 @@ Exercice:
 
 ## Charger les documents
 
-Dans le dossier `2_1_introduction_exercice` se trouvent dix lots contenant chacun une mazarinade au format pdf et un lien vers son *manifest* IIIF. 
+Dans le dossier `exercices` se trouvent dix lots contenant chacun une mazarinade au format pdf et un lien vers son *manifest* IIIF. 
 
 - Commencer par vous répartir les documents (un par personne) ;
 - Essayer dans un premier temps de charger le document via IIIF (le `manifest` se trouve dans le README.md) ;
