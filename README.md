@@ -23,7 +23,9 @@
 * `Cours_07`: [Modéliser les données](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
 * `Cours_08`: [L'image](https://github.com/gabays/NumPat_1/tree/master/Cours_08)
 * `Cours_09`: [L'analyse de mise en page](https://github.com/gabays/NumPat_1/tree/master/Cours_09)
-* `Cours_10`: [Transcrire](https://github.com/gabays/NumPat_1/tree/master/Cours_10)
+* `Cours_10`: [FoNDUE](https://github.com/gabays/NumPat_1/tree/master/Cours_10)
+* `Cours_11`: [Transcrire àa l'ère du numérique](https://github.com/gabays/NumPat_1/tree/master/Cours_11)
+* `Cours_12`: [Exporter, et après?](https://github.com/gabays/NumPat_1/tree/master/Cours_11)
 
 ---
 ## Quoi installer?
