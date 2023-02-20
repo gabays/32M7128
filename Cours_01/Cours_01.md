@@ -325,6 +325,63 @@ L'édition numérique est avant tout une édition, et nécessite des compétence
 8. Publication -> TEIPublisher, Synoptix, LaTeX
 9. Archivage -> HAL, Huma-num
 
+---
+### Un exemple d'enchaînement
+
+![w:900 center](NumPat_1_1_images/Workflow_2.jpg)
+
+---
+### Récupération des données
+
+Le site [Dramacode](http://dramacode.github.io/) publie en ligne les transcriptions en XML-TEI
+
+![w:900 center](NumPat_1_1_images/Workflow_2_dramacode.png)
+
+---
+### La TEI
+
+![w:900 center](NumPat_1_1_images/Workflow_2_TEI.png)
+
+---
+### Traitement avec XSLT
+
+![w:900 center](NumPat_1_1_images/Workflow_2_XSLT.png)
+
+---
+### Texte nettoyé
+
+![w:900 center](NumPat_1_1_images/Workflow_2_txt.png)
+
+
+---
+### Texte annoté
+
+![w:250 center](NumPat_1_1_images/Workflow_2_gaz.png)
+
+---
+### Calcul des scores par pièce
+
+![w:500 center](NumPat_1_1_images/Workflow_2_scores.png)
+
+---
+### Géoréférencement
+
+![w:1100 center](NumPat_1_1_images/Workflow_2_geo.png)
+
+---
+### Traitement
+
+![w:900 center](NumPat_1_1_images/Workflow_2_r.png)
+
+---
+### Publication
+
+![w:1100 center](NumPat_1_1_images/Workflow_2_map.png)
+
+---
+### Analyse: Racine vs Scarron
+
+![w:1100 center](NumPat_1_1_images/Workflow_2_RacScar.png)
 ___
 # Bibliographie
 
