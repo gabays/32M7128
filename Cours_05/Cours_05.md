@@ -21,7 +21,7 @@ h2 {
 
 Numériser le patrimoine I: standards et bonnes pratiques
 
-# Langages du web: HTML
+# Langages du web: HTML et CSS
 
 Simon Gabay
 
