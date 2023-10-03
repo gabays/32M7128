@@ -262,7 +262,7 @@ Exemple de texte balisé en XML:
 </doc>
 ```
 
-Exemple de texte balisé en XML (l'absence de `</p>` est volontaire)
+Exemple de texte balisé en HTML (l'absence de `</p>` est volontaire)
 
 ```HTML
 <html>
