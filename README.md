@@ -38,10 +38,11 @@ Vous aurez besoin:
 ---
 ### Cite this repository
 
-Simon Gabay, _Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)_, Genève: Université de Genève, 2023, [https://github.com/gabays/https://github.com/gabays/32M7128](https://github.com/gabays/https://github.com/gabays/32M7128).
+Simon Gabay, _Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)_, Genève: Université de Genève, 2023, [https://github.com/gabays/https://github.com/gabays/32M7128](https://github.com/gabays/32M7128).
+
+(Ancien titre: _Numériser le patrimoine I: standards et bonnes pratiques_).
 
 ---
 ## Droits
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International Licence</a>.
-
