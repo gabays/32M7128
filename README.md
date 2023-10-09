@@ -14,18 +14,18 @@
 ---
 ## Programme
 
-* `Cours_01`: [Les Bonnes pratiques](https://github.com/gabays/NumPat_1/tree/master/Cours_01)
-* `Cours_02`: [Les Langages](https://github.com/gabays/NumPat_1/tree/master/Cours_02)
-* `Cours_03`: [Markdown et LaTeX](https://github.com/gabays/NumPat_1/tree/master/Cours_03)
-* `Cours_04`: [Planifier son projet](https://github.com/gabays/NumPat_1/tree/master/Cours_04)
-* `Cours_05`: [HTML & CSS](https://github.com/gabays/NumPat_1/tree/master/Cours_05)
-* `Cours_06`: [Git](https://github.com/gabays/NumPat_1/tree/master/Cours_05)
-* `Cours_07`: [Modéliser les données](https://github.com/gabays/NumPat_1/tree/master/Cours_07)
-* `Cours_08`: [L'image](https://github.com/gabays/NumPat_1/tree/master/Cours_08)
-* `Cours_09`: [L'analyse de mise en page](https://github.com/gabays/NumPat_1/tree/master/Cours_09)
-* `Cours_10`: [FoNDUE](https://github.com/gabays/NumPat_1/tree/master/Cours_10)
-* `Cours_11`: [Transcrire àa l'ère du numérique](https://github.com/gabays/NumPat_1/tree/master/Cours_11)
-* `Cours_12`: [Exporter, et après?](https://github.com/gabays/NumPat_1/tree/master/Cours_11)
+* `Cours_01`: [Les Bonnes pratiques](https://github.com/gabays/32M7128/tree/master/Cours_01)
+* `Cours_02`: [Les Langages](https://github.com/gabays/32M7128/tree/master/Cours_02)
+* `Cours_03`: [Markdown et LaTeX](https://github.com/gabays/32M7128/tree/master/Cours_03)
+* `Cours_04`: [Planifier son projet](https://github.com/gabays/32M7128/tree/master/Cours_04)
+* `Cours_05`: [HTML & CSS](https://github.com/gabays/32M7128/tree/master/Cours_05)
+* `Cours_06`: [Git](https://github.com/gabays/32M7128/tree/master/Cours_05)
+* `Cours_07`: [Modéliser les données](https://github.com/gabays/32M7128/tree/master/Cours_07)
+* `Cours_08`: [L'image](https://github.com/gabays/32M7128/tree/master/Cours_08)
+* `Cours_09`: [L'analyse de mise en page](https://github.com/gabays/32M7128/tree/master/Cours_09)
+* `Cours_10`: [FoNDUE](https://github.com/gabays/32M7128/tree/master/Cours_10)
+* `Cours_11`: [Transcrire àa l'ère du numérique](https://github.com/gabays/32M7128/tree/master/Cours_11)
+* `Cours_12`: [Exporter, et après?](https://github.com/gabays/32M7128/tree/master/Cours_11)
 
 ---
 ## Quoi installer?
