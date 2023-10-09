@@ -9,7 +9,7 @@
 * Horaire: mardi 10-12
 * GitHub: https://github.com/gabays/32M7128
 * Moodle: https://moodle.unige.ch/course/view.php?id=8260
-* Catalogue des cours: https://wwwi.unige.ch/cursus/programme-des-cours/web/teachings/details/2022-32M7128
+* Catalogue des cours: https://wwwi.unige.ch/cursus/programme-des-cours/web/teachings/details/2023-32M7128
 
 ---
 ## Programme
