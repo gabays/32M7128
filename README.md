@@ -38,7 +38,7 @@ Vous aurez besoin:
 ---
 ### Cite this repository
 
-Simon Gabay, _Numériser le patrimoine I: standards et bonnes pratiques_, Genève: Université de Genève, 2020, [https://github.com/gabays/https://github.com/gabays/NumPat_1](https://github.com/gabays/https://github.com/gabays/NumPat_1).
+Simon Gabay, _Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)_, Genève: Université de Genève, 2023, [https://github.com/gabays/https://github.com/gabays/32M7128](https://github.com/gabays/https://github.com/gabays/32M7128).
 
 ---
 ## Droits
