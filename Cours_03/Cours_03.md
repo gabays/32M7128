@@ -19,13 +19,65 @@ h2 {
 }
 </style>
 
-Numériser le patrimoine I: standards et bonnes pratiques
+Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)
 
-# LaTeX
+# Markdown et LaTeX
 
 Simon Gabay
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0;float:right;\" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+---
+# Markdown
+
+---
+## Markdown
+
+Markdown est un langage de balisage léger créé en 2004. 
+
+Il existe untutoriel pour les spécialistes de sciences humaines: Sarah Simpkin, « Débuter avec Markdown », traduction par Sofia Papastamkou, _Programming Historian en français_ 2 (2020), https://doi.org/10.46430/phfr0007.
+
+---
+## Exemple
+
+On utilise des balises et un syntaxe très simple pour encoder des informations:
+
+| Code Markdown                      | Rendu                            |
+|------------------------------------|----------------------------------|
+| `du **gras** ici`                  | du **gras** ici                  |
+| `de l'_italique_ ici`              | de l'_italique_ ici              |
+| `Un [lien vers Google](https://www.google.ch)` | Un [lien vers Google](https://www.google.ch) |
+
+
+---
+## Compiler
+
+Pour obtenir le résultat final, on convertit par exemple le markdown en HTML (mais pas uniquement). On dit que l'on "compile" le code (source) en autre chose.
+
+![width:100%](images/markdown-flowchart.png)
+
+(Originellement, la compilation concerne le passage du code source en code objet. Tous les langages ne sont pas compilés, certains sont interprétés, comme Python ou R, d'autres sont compilés, comme Java).
+
+---
+## Utiliser Markdown
+
+Pour utiliser Markdown:
+
+- De nombreux éditeurs proposent un compilateur intégré (comme Oxygen, Visual Studio Code…)
+- Il existe des applications en ligne comme https://markdownlivepreview.com
+- Pour convertir des documents en ligne de commande, vous avez [Pandoc](https://pandoc.org)
+
+---
+## Exercice
+
+Markdown est notamment utilisé avec GitLab/Github:
+
+- Aller sur le site du cours: https://github.com/gabays/32M7128 ;
+- Sélectionner le [`README.md`](https://github.com/gabays/32M7128/blob/master/README.md);
+- Cliquer sur `Raw` en haut à droite pour voir le code non compilé.
+
+
+
 
 ---
 
@@ -148,8 +200,5 @@ Il est parfois utile d'appeler un fichier externe au document `LaTeX`, comme une
 \end{figure}
 ```
 
----
-## Bonus: Markdown
 
-Il existe untutoriel: Sarah Simpkin, « Débuter avec Markdown », traduction par Sofia Papastamkou, _Programming Historian en français_ 2 (2020), https://doi.org/10.46430/phfr0007.
 
