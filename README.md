@@ -1,4 +1,5 @@
-# \[32M7128\] Numériser le patrimoine I: standards et bonnes pratiques
+# \[32M7128\] Bibliothèques numériques I. 
+## Gestion de projet (conception, partage, archivage)
 
 * Simon Gabay
 * Genève, semestre d'automne
