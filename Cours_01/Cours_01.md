@@ -19,7 +19,8 @@ h2 {
 }
 </style>
 
-Numériser le patrimoine I: standards et bonnes pratiques
+Bibliothèques numériques I
+Gestion de projet (conception, partage, archivage)
 
 # Les Bonnes pratiques
 
@@ -57,11 +58,11 @@ Prenons un exemple, celui d'[e-codices](https://www.e-codices.unifr.ch/fr/search
 
 ---
 
-![45% center](NumPat_1_1_images/e-codices.png)
+![w:100% center](images/e-codices.png)
 
 ---
 
-![45% center](NumPat_1_1_images/e-codices_xml.png)
+![w:100% center](images/e-codices_xml.png)
 
 ---
 ## _Under the hood_
@@ -214,7 +215,7 @@ Les entités uniques, comme les personnes, les lieux, les objets… peuvent avoi
 
 Fiche GeoNames de Genève (https://www.geonames.org/2660646)
 
-![w:700 center](NumPat_1_1_images/geonames.png)
+![w:700 center](images/geonames.png)
 
 
 ---
@@ -237,10 +238,10 @@ Il existe plusieurs solutions:
 
 Exemple de licence sur [Wikipedia](https://fr.wikipedia.org/wiki/Fichier:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg):
 
-![45% center](NumPat_1_1_images/CC_wiki.png)
+![45% center](images/CC_wiki.png)
 
 ---
-![w:400 center](NumPat_1_1_images/Creative_commons_license_spectrum_fr.png)
+![w:400 center](images/Creative_commons_license_spectrum_fr.png)
 
 ---
 ## Diffuser les données
@@ -255,7 +256,7 @@ Réaliser techniquement un projet ne suffit pas: il faut préparer la distributi
 
 ## _FAIR_
 
-![w:550 center](NumPat_1_1_images/FAIR.png)
+![w:550 center](images/FAIR.png)
 
 ---
 * F (_findable_) car les données doivent être facilement trouvables, par un permalien par exemple et des métadonnées pour les moteurs de recherche
@@ -268,9 +269,9 @@ Réaliser techniquement un projet ne suffit pas: il faut préparer la distributi
 
 L'_open science_ est un enjeu fondamental, tant d'un point de vue numérique que scientifique. 
 
-* _open access_: ![w:25](NumPat_1_1_images/open_access.png)
-* _open source_: ![w:25](NumPat_1_1_images/open_source.png)
-* _open data_: ![w:100](NumPat_1_1_images/open_data.png)
+* _open access_: ![w:25](images/open_access.png)
+* _open source_: ![w:25](images/open_source.png)
+* _open data_: ![w:100](images/open_data.png)
 * _etc._
 
 L'intérêt de la démarche _open_ est citoyen (gratuité) mais aussi scientifique (reproductibilité, garantie qualité).
@@ -299,7 +300,7 @@ Cependant, il existe déjà des chaînes de traitement fonctionnelles et de trè
 ---
 ## Un exemple de chaîne de traitement pour l'édition numérique
 
-![w:800 center](NumPat_1_1_images/Workflow.jpg)
+![w:800 center](images/Workflow.jpg)
 
 Source: Christof Schöch, _Digitale Textedition mit TEI_, [en ligne](https://de.dariah.eu/tei-tutorial).
 
@@ -328,60 +329,60 @@ L'édition numérique est avant tout une édition, et nécessite des compétence
 ---
 ### Un exemple d'enchaînement
 
-![w:900 center](NumPat_1_1_images/Workflow_2.jpg)
+![w:900 center](images/Workflow_2.jpg)
 
 ---
 ### Récupération des données
 
 Le site [Dramacode](http://dramacode.github.io/) publie en ligne les transcriptions en XML-TEI
 
-![w:900 center](NumPat_1_1_images/Workflow_2_dramacode.png)
+![w:900 center](images/Workflow_2_dramacode.png)
 
 ---
 ### La TEI
 
-![w:900 center](NumPat_1_1_images/Workflow_2_TEI.png)
+![w:900 center](images/Workflow_2_TEI.png)
 
 ---
 ### Traitement avec XSLT
 
-![w:900 center](NumPat_1_1_images/Workflow_2_XSLT.png)
+![w:900 center](images/Workflow_2_XSLT.png)
 
 ---
 ### Texte nettoyé
 
-![w:900 center](NumPat_1_1_images/Workflow_2_txt.png)
+![w:900 center](images/Workflow_2_txt.png)
 
 
 ---
 ### Texte annoté
 
-![w:250 center](NumPat_1_1_images/Workflow_2_gaz.png)
+![w:250 center](images/Workflow_2_gaz.png)
 
 ---
 ### Calcul des scores par pièce
 
-![w:500 center](NumPat_1_1_images/Workflow_2_scores.png)
+![w:500 center](images/Workflow_2_scores.png)
 
 ---
 ### Géoréférencement
 
-![w:1100 center](NumPat_1_1_images/Workflow_2_geo.png)
+![w:1100 center](images/Workflow_2_geo.png)
 
 ---
 ### Traitement
 
-![w:900 center](NumPat_1_1_images/Workflow_2_r.png)
+![w:900 center](images/Workflow_2_r.png)
 
 ---
 ### Publication
 
-![w:1100 center](NumPat_1_1_images/Workflow_2_map.png)
+![w:1100 center](images/Workflow_2_map.png)
 
 ---
 ### Analyse: Racine vs Scarron
 
-![w:1100 center](NumPat_1_1_images/Workflow_2_RacScar.png)
+![w:1100 center](images/Workflow_2_RacScar.png)
 ___
 # Bibliographie
 

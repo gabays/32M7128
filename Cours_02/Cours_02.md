@@ -19,7 +19,8 @@ h2 {
 }
 </style>
 
-Numériser le patrimoine I: standards et bonnes pratiques
+Bibliothèques numériques I
+Gestion de projet (conception, partage, archivage)
 
 # Langages
 
