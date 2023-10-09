@@ -1,5 +1,4 @@
-# \[32M7128\] Bibliothèques numériques I. 
-## Gestion de projet (conception, partage, archivage)
+# \[32M7128\] Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)
 
 * Simon Gabay
 * Genève, semestre d'automne
