@@ -115,3 +115,9 @@ Si je veux qu'il apparaisse, je peux le mettre dans un bloc de code:
 ```
 [comment]: <> (Je peux rajouter des commentaires)
 ```
+
+## HTML
+
+Il est possible d'utiliser le HTML directement pour toutes les choses plus compliquées comme <span style="color:red">mettre du texte en rouge</span> ou mettre une image avec sa légende:
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International Licence</a>.
