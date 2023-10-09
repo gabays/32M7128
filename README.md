@@ -24,7 +24,7 @@
 * `Cours_08`: [L'image](https://github.com/gabays/32M7128/tree/master/Cours_08)
 * `Cours_09`: [L'analyse de mise en page](https://github.com/gabays/32M7128/tree/master/Cours_09)
 * `Cours_10`: [FoNDUE](https://github.com/gabays/32M7128/tree/master/Cours_10)
-* `Cours_11`: [Transcrire àa l'ère du numérique](https://github.com/gabays/32M7128/tree/master/Cours_11)
+* `Cours_11`: [Transcrire à l'ère du numérique](https://github.com/gabays/32M7128/tree/master/Cours_11)
 * `Cours_12`: [Exporter, et après?](https://github.com/gabays/32M7128/tree/master/Cours_11)
 
 ---
@@ -32,13 +32,13 @@
 
 Vous aurez besoin:
 * D'un éditeur de code, comme [Sublime Text](https://www.sublimetext.com).
-* Un éditeur XML peut être utile. L'université fournit des licences pour [Oxygen XML](https://www.oxygenxml.com).
-* D'un compte sur [Overleaf](https://www.overleaf.com)
+* Un éditeur XML peut être utile. L'université fournit des licences pour [Oxygen XML](https://www.oxygenxml.com). Pour les personnes ne disposant pas de licence, il existe [un _plug in_ TEI](https://marketplace.visualstudio.com/items?itemName=raffazizzi.sxml) pour _Visual Studio code_.
+* D'un compte sur [Overleaf](https://www.overleaf.com) pour LaTeX si vous ne travaillez pas en local
 
 ---
 ### Cite this repository
 
-Simon Gabay, _Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)_, Genève: Université de Genève, 2023, [https://github.com/gabays/https://github.com/gabays/32M7128](https://github.com/gabays/32M7128).
+Simon Gabay, _Bibliothèques numériques I. Gestion de projet (conception, partage, archivage)_, Genève: Université de Genève, 2023, [https://github.com/gabays/32M7128](https://github.com/gabays/32M7128).
 
 (Ancien titre: _Numériser le patrimoine I: standards et bonnes pratiques_).
 
