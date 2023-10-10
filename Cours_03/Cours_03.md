@@ -36,7 +36,7 @@ Simon Gabay
 
 Markdown est un langage de balisage léger créé en 2004. 
 
-Il existe untutoriel pour les spécialistes de sciences humaines: Sarah Simpkin, « Débuter avec Markdown », traduction par Sofia Papastamkou, _Programming Historian en français_ 2 (2020), https://doi.org/10.46430/phfr0007.
+Il existe un tutoriel pour les spécialistes de sciences humaines: Sarah Simpkin, « Débuter avec Markdown », traduction par Sofia Papastamkou, _Programming Historian en français_ 2 (2020), https://doi.org/10.46430/phfr0007.
 
 ---
 ## Exemple
@@ -154,7 +154,7 @@ Certains sont obligatoires pour certains types de publication
 - Pour les auteurs on utilise `Nom, Prénom` auivi de `and` entre chaque auteur s'il y en a plusieurs (`Duby, Georges and Le Goff, Jacques`)
 - Si on veut conserver des majuscules en dépit du style pour la bibliographie on les met entre `{accolades}` (par ex. `title="{L}e {XVIe} siècle`)
 - Le contenu peut être entre `"guillemets"` ou entre `{accolades}`
-- Attention, parfois le nom des chants peut changer (`journal` vs `journaltitle` `date` vs `year`…). Le compilateur vous indiquera les erreurs
+- Attention, parfois le nom des champs peut changer (`journal` vs `journaltitle` `date` vs `year`…). Le compilateur vous indiquera les erreurs
 - Parfois certains styles utilisent tous les champs renseignés, alors qu'ils peuvent faire doublon (par ex. url et DOI)
 
 -> **Relisez toujours très soigneusement votre bibliographie!**
