@@ -19,7 +19,8 @@ h2 {
 }
 </style>
 
-Numériser le patrimoine I: standards et bonnes pratiques
+Bibliothèques numériques I
+Gestion de projet (conception, partage, archivage)
 
 # Langages du web: HTML et CSS
 
@@ -510,3 +511,13 @@ div {
 ```
 
 → Toutes les `<div>` auront un fond vert, même celle avec un attribut `@type="chapter"`
+
+---
+## One more thing
+
+Nous n'avons pas le temps d'aborder le sujet, mais plutôt que de faire son CSS directement, il est très chaudement recommandé d'utiliser _Bootstrap_. Vous trouverez un premier tutoriel en ligne: https://www.w3schools.com/bootstrap/bootstrap_get_started.asp
+
+---
+## Exercice
+
+Stylez avec un CSS externe votre CV
