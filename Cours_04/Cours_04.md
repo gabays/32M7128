@@ -32,12 +32,114 @@ Simon Gabay
 # Aavant de se lancer: détails techniques
 
 ---
-## Le flowchart
+## Le _flowchart_
+
+Un exemple très simple de _flowchart_
+
+---
+
+## Définition
+
+En français on peut parfois parler d'_Organigramme de programmation_.
+
+Il s'agit d'une représentation graphique normalisée de l'enchaînement des opérations et des décisions effectuées par un programme d'ordinateur.
+
+On peut dessiner notamment:
+- le fonctionnement d'un algorithme
+- l'enchaînement des différents outils
+- …
+
+---
+## Un exemple simple
+
+![w:500 center](images/flowchart_simple.png)
+
+---
+## Quelques règles (I)
+
+![w:1000 center](images/flow_syntax1.png)
+
+---
+## Quelques règles (II)
+
+![w:1200 center](images/flow_syntax2.png)
+
+---
+## Exemple 1
+
+Exécution de l'entraînement d'un modèle OCR
+
+![w:900 center](images/flow_ML.png)
+
+---
+## Exemple 2
+
+Exécution d'un projet
+
+![w:1000 center](images/flow_7sages.png)
+
+---
+## Exemple 3
+
+Exécution d'un projet avec plusieurs équipes
+
+![w:1200 center](images/flow_users.png)
+
+---
+## Exemple 4
+
+Exécution d'un algo
+
+![w:240 center](images/flow_algo.png)
+
+---
+## Exemple 5
+
+Exécution d'une pipeline
+
+![w:1200 center](images/flow_pipe.png)
+
+---
+## Exercice
+
+Dessinez un _flowchart_ avec https://app.diagrams.net
 
 ---
 ## Le pseudo-code
 
 ---
+## Définition
+
+Le pseudo-code est une façon de décrire un algorithme en langage presque naturel, sans référence à un langage de programmation en particulier.
+
+On va décrire la suite des opérations avant de vraiment programmer la chose.
+
+Pour écrire ce pseudo-code il n'y a pas de règle strict mais un consensus autour de certaines pratiques.
+
+---
+## Entre _flowchart_ et pseudo-code
+
+Avec un flowchart:
+
+![w:300 center](images/pseudo_alternative.png)
+
+Avec du pseudo-code:
+
+```
+SI <expression booléenne> ALORS
+       <instruction>
+       ...
+SINON
+       <instruction>
+       ... 
+FIN_SI
+```
+
+
+---
+
+## Un exemple plus complexe
+
 ```
 fonction f(n):
     """ 
@@ -50,6 +152,8 @@ fonction f(n):
             p ← p * k
     renvoyer p
 ```
+
+---
 
 ```python
 def f(n):
@@ -64,8 +168,7 @@ def f(n):
     return p
 ```
 
-
-
+(`%` désigne le modulo, c'est-à-dire le reste de la division)
 
 ---
 # Un projet
