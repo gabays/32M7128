@@ -1,9 +1,71 @@
-Numériser le patrimoine I: standards et bonnes pratiques
+---
+marp: true
+theme: default
+paginate: true
+---
 
-# Management de projet
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 46px;
+  color: darkred;
+}
+h2 {
+  font-size: 38px;
+  color: darkred;
+}
+</style>
+
+Bibliothèques numériques I
+Gestion de projet (conception, partage, archivage)
+
+# Planifier son projet
 
 Simon Gabay
-Genève
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0;float:right;\" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+---
+# Aavant de se lancer: détails techniques
+
+---
+## Le flowchart
+
+---
+## Le pseudo-code
+
+---
+```
+fonction f(n):
+    """ 
+    n est un entier naturel non nul
+    renvoie le produit des entiers pairs compris entre 1 et n.
+    """
+    p ← 1
+    Pour k de 1 à n:
+        si k est pair:
+            p ← p * k
+    renvoyer p
+```
+
+```python
+def f(n):
+    """
+    n -- entier naturel > 1
+    renvoie le produit des entiers pairs compris entre 1 et n.
+    """
+    p = 1
+    for k in range(1, n+1):
+        if k%2 == 0: 
+            p = p*k
+    return p
+```
+
+
+
 
 ---
 # Un projet
@@ -72,17 +134,17 @@ L'_UX Design_, c'est penser du point de vue de l’utilisateur, à partir d’u
 ---
 ## Etape 1
 
-![100%center](images/UX_1.png)
+![w:1000 center](images/UX_1.png)
 
 ---
 ## Etape 2
 
-![100%center](images/UX_2.png)
+![w:1000 center](images/UX_2.png)
 
 ---
 ## Etape 3
 
-![99%center](images/UX_3.png)
+![w:1000 center](images/UX_3.png)
 
 ---
 ## Implication des utilisateurs: approche quantitative
@@ -155,7 +217,7 @@ Accent mis sur le design UX : Site Web comme objet complexe, sans mode d’emplo
 
 ---
 
-![100%center](images/5_levels.png)
+![w:1000 center](images/5_levels.png)
 
 ---
 # Maquettage et ergonomie
@@ -197,27 +259,27 @@ Quatre grandes étapes
 
 ---
 
-![15% center](images/maquette_1_1.png)
+![w:900 center](images/maquette_1_1.png)
 
 ---
 
-![15% center](images/maquette_1_2.png)
+![w:900 center](images/maquette_1_2.png)
 
 ---
 
-![15% center](images/maquette_2_1.png)
+![w:900 center](images/maquette_2_1.png)
 
 ---
 
-![15% center](images/maquette_2_2.png)
+![w:900 center](images/maquette_2_2.png)
 
 ---
 
-![15% center](images/maquette_3_1.png)
+![w:900 center](images/maquette_3_1.png)
 
 ---
 
-![15% center](images/maquette_3_2.png)
+![w:900 center](images/maquette_3_2.png)
 
 
 ---
