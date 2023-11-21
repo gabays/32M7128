@@ -55,7 +55,7 @@ On utilise des balises et un syntaxe très simple pour encoder des informations:
 
 Pour obtenir le résultat final, on convertit par exemple le markdown en HTML (mais pas uniquement). On dit que l'on "compile" le code (source) en autre chose.
 
-![width:100%](images/markdown-flowchart.png)
+![w:1100 center](images/markdown-flowchart.png)
 
 (Originellement, la compilation concerne le passage du code source en code objet. Tous les langages ne sont pas compilés, certains sont interprétés, comme Python ou R, d'autres sont compilés, comme Java).
 
