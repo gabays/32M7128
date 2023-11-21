@@ -40,7 +40,7 @@ Deux types d’images:
 ---
 
 ## Image vectorielle (I)
-* Représenter les données de l’image par des formules géométriques qui vont pouvoir être décrites d’un point de vue mathématique (abscisse et ordonnées)
+* Représenter les données de l’image par des formules géométriques qui vont pouvoir être décrites d’un point de vue mathématique (abscisse et ordonnée)
 * C’est notamment le format svg (pour _Scalable Vector Graphics_)
 * En pratique : pas de problème si on zoom.
 ---
@@ -67,7 +67,7 @@ Pour plus d'exemples, allez regarder du côté de [w3schools](https://www.w3scho
 
 ## Une image bitmap (I)
 * Composée d’une matrice (tableau) de points à plusieurs dimensions. Dans le cas des images à deux dimensions (le plus courant), les points sont appelés pixels.
-* C’est notamment le format jepg, gif, png outif.
+* C’est notamment le format jepg, gif, png ou tif.
 * Ces différents formats se différencient par le nombre de couleurs, leur compression (avec ou sans perte), la possibilité d’un affichage progressif.
 * En pratique : problème si on zoom.
 
@@ -192,7 +192,7 @@ L'URI d'un manifeste est la suivante:
 
 https://gallica.bnf.fr/iiif/ark:/12148/bpt6k313644d/manifest.json
 
-Ici l'identifiant est un ark (cf. explications [ici](https://fr.wikipedia.org/wiki/Archival_Resource_Key).
+Ici l'identifiant est un ark (cf. explications [ici](https://fr.wikipedia.org/wiki/Archival_Resource_Key)).
 
 Pour récupérer les métadonnées d'une image: 
 
@@ -243,7 +243,7 @@ th {
 }
 </style>
 
-pour extraire une image commençant à 0 sur l'horizontal, 1900 sur l'axe vertical, de 2400 pixels en largeur et 1200 pixels en hauteur, à laquelle on applique ensuite une rotation de 90°.
+pour extraire une image commençant à 0 sur l'axe horizontal, 1900 sur l'axe vertical, de 2400 pixels en largeur et 1200 pixels en hauteur, à laquelle on applique ensuite une rotation de 90°.
 
 | /{region}         | /{size} | /{rotation} | /{quality}  | /{format} |
 |-------------------|---------|-------------|-------------|-----------|
@@ -273,5 +273,5 @@ Exercice:
 Dans le dossier `exercices` se trouvent dix lots contenant chacun une mazarinade au format pdf et un lien vers son *manifest* IIIF. 
 
 - Commencer par vous répartir les documents (un par personne) ;
-- Essayer dans un premier temps de charger le document via IIIF (le `manifest` se trouve dans le README.md) ;
+- Essayer dans un premier temps de charger le document via IIIF (le `manifest` se trouve dans le `README.md`) ;
 - Si ça ne fonctionne pas, charger le document au format pdf.
