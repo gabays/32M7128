@@ -124,14 +124,14 @@ th {
 
 ## Plus loin que DC
 * _MAchine-Readable Cataloging_ (MARC)
-* _Metadata Object Description Schema_ (MODS, entre DC et MARC)
-* _Metadata Encoding and Transmission Standard_ (METS)
+* [_Metadata Object Description Schema_](https://fr.wikipedia.org/wiki/Metadata_Object_Description_Schema) (MODS, entre DC et MARC)
+* [_Metadata Encoding and Transmission Standard_](https://fr.wikipedia.org/wiki/Metadata_Encoding_and_Transmission_Standard) (METS, intègre tous les formats: MARC, DC, EAD…)
 
 Echanger les données
 * Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)
 -> [Exemple d'e-codices](http://e-codices.unifr.ch/oai)
 * SRU=Search/Retrieve via URL
--> [Exemple de swissbib](http://sru.swissbib.ch)
+-> [Exemple de la BnF](https://api.bnf.fr/fr/api-sru-catalogue-general)
 
 ---
 # La TEI: définitions et dérivations
@@ -286,8 +286,3 @@ Ce modèle "orienté événement" décrit les événements de la vie d’
 ## Exemple: Le _Monument à Balzac_ de Rodin
 
 ![100% center](images/CIDOC_Rodin_Balzac.png)
-
----
-## Exercice
-
-Encodez votre identité
