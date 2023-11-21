@@ -94,16 +94,9 @@ Le segmenteur peut extraire plus que des lignes: il peut extraire, par exemple, 
 # Principes d'apprentissage machine
 
 ---
-## Apprendre pour une machine
+## L'apprentissage automatique
 
-Pour faire faire quelque chose à une machine, on a deux possibilités:
-1. Donner des règles à la machine: _suivons_ a pour lemme _suivre_. Le problème c'est qu'il existe des cas ambigus: _suis_? Il faut alors rajouter des règles toujours complexes
-2. Donner des exemples à la machine, qui va déduire des règles à partir des exemples: _je suis un homme_ -> _être_ vs _je suis le cours_ -> _suivre_
-
----
-## L'IA c'est quoi?
-
-L'intelligence artificielle se fonde sur des approches mathématiques et statistiques pour donner aux ordinateurs la capacité d'« apprendre » à partir de données, c'est-à-dire d'améliorer leurs performances à résoudre des tâches sans être explicitement programmés pour chacune.
+L'apprentissage machine (ou automatique) se fonde sur des approches mathématiques et statistiques pour donner aux ordinateurs la capacité d'« apprendre » à partir de données, c'est-à-dire d'améliorer leur performance à résoudre des tâches sans être explicitement programmés pour chacune.
 
 Il existe plusieurs méthodes:
 * Machines à vecteurs de support
@@ -111,6 +104,15 @@ Il existe plusieurs méthodes:
 * Les réseaux de neurones
 * …
 
+---
+
+## Apprendre pour une machine
+
+Pour apprendre à une machine à faire quelque chose, on a deux possibilités:
+1. Donner des règles à la machine: _suivons_ a pour lemme _suivre_. Le problème c'est qu'il existe des cas ambigus: _suis_? Il faut alors rajouter des règles toujours complexes
+2. Donner des exemples à la machine, qui va déduire des règles à partir des exemples: _je suis un homme_ -> _être_ vs _je suis le cours_ -> _suivre_. Le problème c'est qu'il faut beaucoup d'exemple
+
+Nous allons ici suivre la seconde méthode, qui est plus efficace. Il va donc nous falloir des exemples.
 
 ---
 ## Préparer un dataset
@@ -155,8 +157,8 @@ Mais pour partager des données, il faut qu'elles soient compatibles entre elles
 ---
 ## Le résultat
 
-On utilise pour évaluer un modèle un score dit "F1", calculé à partir de la précision (_accuracy_) et du rappel (_recall_):
-* Le rappel calcule le nombre de positifs bien prédit par notre modèle.
+On utilise pour évaluer un modèle un score dit "F1", calculé à partir de la précision (_precision_) et du rappel (_recall_):
+* Le rappel calcule le nombre de positifs bien prédits par notre modèle.
 * La précision calcule le nombre de prédictions positives bien effectuées.
 
 On parle donc:
@@ -181,7 +183,7 @@ On utilise aussi l'intersection sur l'union (_Intersection over union_), plus ad
 
 ---
 ## Sur le test
-Le score du test n'a pas de valeur en soi, elle dépend:
+Le score du test n'a pas de valeur en soi, il dépend:
 * Des données d'entraînement
 * Des données dans le jeu de test
 
@@ -590,7 +592,7 @@ Identifying damaged area might prove useful, as they can affect the result of te
 ---
 ## `DefaultLine`
 
-* D*efinition: it characterises any kind of standard text line, whether they are included in the `MainZone` text, in the `MarginZone`, in `MusicZone`, or in any type of zone.
+* Definition: it characterises any kind of standard text line, whether they are included in the `MainZone` text, in the `MarginZone`, in `MusicZone`, or in any type of zone.
 
 * Subtypes: none
 
