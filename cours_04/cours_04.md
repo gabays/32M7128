@@ -117,14 +117,22 @@ _Two possible transcriptions of the previous image, with an abbreviation <span c
 </div>
 <div style="flex:1">
 
-_Mão_ is at the same time
-- a complete portuguese word
-- an italian word in an abbreviated form (_mão_ → _mano_)
+_Mão_ est à la fois
+- un mot portugais
+- un mot italien abrégé (_mão_ → _mano_)
 
-<span class="red">If we always develop abbreviations, we are going to create dysfunctional models.</span>
+<span class="red">Si on développe les abréviations, on peut créer des modèles disfonctionnels.</span>
 
 </div>
 </div>
+
+---
+## Un cas problématique
+
+![w:800 center](images/twitter.png)
+
+Exemple de prédiction du modèle Transkribus _Coloso Español_ (observez les différentes versions de _que_)
+
 
 ---
 ## Niveaux de transcription
