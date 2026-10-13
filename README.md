@@ -8,7 +8,7 @@
 - `cours_01`: introduction
 - `cours_02`: entraîner un modèle d'IA
 - `cours_03`: analyse de mise en page
-- `cours_04`: Reconnaissance automatique de texte
+- `cours_04`: reconnaissance automatique de texte
 
 ## Bibliographie
 
