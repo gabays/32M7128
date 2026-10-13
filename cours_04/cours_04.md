@@ -49,7 +49,6 @@ Cela dépend évidemment de plusieurs paramètres:
 C'est un exemple du tournant épistémologique majeur que constitue le numérique, et non une simple informatisation des pratiques anciennes
 
 ---
-
 # Editer
 
 ---
@@ -97,14 +96,14 @@ table { font-size: 24px; }
 </style>
 
 
-| Graphemic | Regularized |
+| Possibilité A | Possibilité B |
 |---|---|
 | <span class="junicode">Depui<span class="blue"></span> le<span class="blue"></span> gen<span class="blue"></span> <span class="blue">ſ</span>ont tou<span class="blue">ſ</span>jour<span class="blue"></span> venu<span class="blue"></span> ver<span class="blue"></span> elle</span> | <span class="junicode">Depui<span class="blue">s</span> le<span class="blue">s</span> gen<span class="blue">s</span> <span class="blue">s</span>ont tou<span class="blue">s</span>jour<span class="blue">s</span> venu<span class="blue">s</span> ver<span class="blue">s</span> elle</span> |
 | <span class="junicode">de tout pay<span class="blue"></span>, fut pour cho<span class="blue">ſ</span>e<span class="blue"></span> <span class="ora">ꝑ</span>due<span class="blue"></span>, ou pour</span> | <span class="junicode">de tout pay<span class="blue">s</span>, fut pour chose<span class="blue">s</span> <span class="ora">per</span>due<span class="blue">s</span>, ou pour</span> |
 | <span class="junicode">garir gen<span class="blue"></span> et beste<span class="blue"></span>. mais de elle<span class="blue"></span> me<span class="blue">ſ</span>me</span> | <span class="junicode">garir gen<span class="blue">s</span> et beste<span class="blue">s</span>. mais de elle<span class="blue">s</span> me<span class="blue">s</span>me</span> |
 | <span class="junicode">ne leur<span class="blue"></span> pou<span class="red">u</span>oit aider que premierement</span> | <span class="junicode">ne leur<span class="blue">s</span> pou<span class="red">v</span>oit aider que premierement</span> |
 
-_Two possible transcriptions of the previous image, with an abbreviation <span class="ora">in orange</span>, variations of _s_ <span class="blue">in blue</span>, and a ramist letter <span class="red">in red</span>._
+_Deux transcriptions possibles de la même image, avec une abréviation <span class="ora">en orange</span>, variations de _s_ <span class="blue">en bleu</span>, et une lettre ramiste <span class="red">en rouge</span>._
 
 ---
 ## The _mão_ problem
@@ -133,7 +132,6 @@ _Mão_ est à la fois
 
 Exemple de prédiction du modèle Transkribus _Coloso Español_ (observez les différentes versions de _que_)
 
-
 ---
 ## Niveaux de transcription
 
@@ -150,7 +148,6 @@ Transcription graphématique:
 Transcription modernisée:
 
 <span style="font-family:Junicode">Dont bien sont fait les vers par consonant</span>
-
 
 ---
 
@@ -257,7 +254,6 @@ on utilise des polices spéciales, comme `Junicode`, qui intègre la MUFI (et do
 Pour installer Junicode: https://junicode.sourceforge.io.
 
 ---
-
 # Segmenter
 
 ---
@@ -276,7 +272,6 @@ _vous me parles auec vne_
 _veritable confiance, et ie_
 
 ---
-
 ## Automatiser
 
 ![w:600 center](images/Segmentation.png)
@@ -289,7 +284,6 @@ ou bien doit-on désagglutiner?
 _⁊ aiſe de l'auoir de ceſt ſiecle. ne en euſ n'ōt_
 
 Thibault Clérice,"Evaluating Deep Learning Methods for Word Segmentation of Scripta Continua Texts in Old French and Latin", _Journal of Data Mining and Digital Humanities_, Episciences.org, 2020
-
 
 ---
 # Entraîner
@@ -364,7 +358,6 @@ td, th { padding: 2px 8px; }
 | [Proto4DigEd](https://doi.org/10.5281/zenodo.11632614) | fr | 19th c. | 107 | 1 400 | No |
 | CREMMA-MSS-19 | fr | 19th c. | 79 | 1 807 | [Yes](https://github.com/HTR-United/CREMMA-MSS-19) |
 
-
 ---
 <style scoped>
 table { font-size: 18px; }
@@ -400,7 +393,6 @@ Les images transcrites sont alors associées à leur transcription
 _Transkribus_ (Innsbruck)
 
 ![w:800 center](images/Transcribus.png)
-
 
 ---
 ## Transcrire (II)
@@ -439,7 +431,6 @@ Comme c'est du _machine learning_, on va répéter l'entraînement une multitude
 
 ![130% center](images/Racine1676_Oeuvres_bpt6k990581p_corrected_000010.png)
 
-
 ---
 ## L'amélioration des scores: bruit
 
@@ -454,7 +445,6 @@ Comme c'est du _machine learning_, on va répéter l'entraînement une multitude
 * Bruit fort
 
 ![90% center](images/Bossuet1683_OraisonAutriche_btv1b8606962m_clean_000041Hole_0.png)
-
 
 ---
 ## L'amélioration des scores: modification du cadre
@@ -479,7 +469,6 @@ Comme c'est du _machine learning_, on va répéter l'entraînement une multitude
 * Ces scores peuvent être calculés sur deux jeux de données :
 	* Le train set (on OCRise les images qui servent pour l’entraînement)
 	* Le test set (on OCRise des images qui n’ont pas servi pour l’entraînement)
-
 
 ---
 ## Documents médiévaux
