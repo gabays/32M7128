@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+            type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Example d'encodage TEI</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Université de Genève</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Cours original</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <head>Filmographie</head>
+         <div>
+            <head>Films</head>
+            <p>STAR WARS, INDIANA JONES, TITANIC</p>
+         </div>
+         <div>
+            <head>Réalisateurs</head>
+            <p>GEORGE LUCAS, STEVEN SPIELBERG, JAMES
+              CAMERON</p>
+         </div>
+      </body>
+  </text>
+</TEI>
